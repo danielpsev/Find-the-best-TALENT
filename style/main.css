@@ -38,6 +38,10 @@ header,
 #index-stories-section,
 #index-advantages-section,
 #index-stories-section,
+#about-top-section,
+#about-stuff-section,
+#about-clients-section,
+#contact-main,
 .banner-container
 footer{
     width: 100%;
@@ -45,13 +49,22 @@ footer{
 
 header,
 #index-top-section,
-#index-stories-section{
+#about-top-section,
+#contact-main{
     background-color: var(--primary-midnight-green);
 }
+
 #index-advantages-section,
+#about-clients-section,
 footer{
     background-color: var(--secondary-sacramento-state-green);
 }
+
+#index-stories-section,
+#about-stuff-section{
+    background-color: var(--secondary-deep-jungle-green);
+}
+
 .banner-container{
     background-color: var(--primary-light-coral);
 }
