@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Livvic-SemiBold;
+    src: url(../assets/fonts/Livvic/Livvic-SemiBold.ttf);
+}
+@font-face {
+    font-family: Livvic-Bold;
+    src: url(../assets/fonts/Livvic/Livvic-Bold.ttf);
+}
 :root{
     --primary-midnight-green: #014E56;
     --primary-light-coral:  #F67E7E;
@@ -14,4 +22,28 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Livvic-SemiBold;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: calc(100% - 330px);
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+
+/* Kodas skirtas tablet'ui */
+@media screen and (max-width: 1439px) {
+    .main-wrapper{
+        width: calc(100% - 75px);
+    }
+}
+/*Kodas skirtas mobile*/
+@media screen and (max-width: 767px) {
+    .main-wrapper{
+        width: calc(100% - 48px);
+    }
 }
