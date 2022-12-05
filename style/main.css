@@ -1,21 +1,37 @@
+@font-face {
+    font-family: Livvic-SemiBold;
+    src: url(../assets/fonts/Livvic/Livvic-SemiBold.ttf);
+}
+@font-face {
+    font-family: Livvic-Bold;
+    src: url(../assets/fonts/Livvic/Livvic-Bold.ttf);
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-/*
-@font-family{
     font-family: Livvic-SemiBold;
-    src: url(../assets/fonts/Livvic/Livvic-SemiBold.ttf);
 }
-*/
-/*Kodas skirtas tablet'ui*/
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: calc(100% - 330px);
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+
+/* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
-    
+    .main-wrapper{
+        width: calc(100% - 75px);
+    }
 }
 /*Kodas skirtas mobile*/
-@media screen and (max-width: 375px) {
-    body{
-        background-color: purple;
+@media screen and (max-width: 767px) {
+    .main-wrapper{
+        width: calc(100% - 48px);
     }
 }
