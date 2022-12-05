@@ -16,8 +16,6 @@
     --secondary-sacramento-state-green: #012F34;
     --secondary-dark-green: #002529;
 }
-
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -27,23 +25,54 @@
 a{
     text-decoration: none;
 }
+body{
+    /* Panaikint užbaigus projektą */
+    background-color: #263159;
+}
 .wrapper{
     width: calc(100% - 330px);
     margin: 0 auto;
 }
-header{
+
+header,
+#index-stories-section,
+#index-advantages-section,
+#index-stories-section,
+.banner-container
+footer{
     width: 100%;
+}
+
+header,
+#index-top-section,
+#index-stories-section{
+    background-color: var(--primary-midnight-green);
+}
+#index-advantages-section,
+footer{
+    background-color: var(--secondary-sacramento-state-green);
+}
+.banner-container{
+    background-color: var(--primary-light-coral);
 }
 
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
-    .main-wrapper{
+    .wrapper{
         width: calc(100% - 75px);
+    }
+    body{
+        /* Panaikint užbaigus projektą */
+        background-color: #495579;
     }
 }
 /*Kodas skirtas mobile*/
 @media screen and (max-width: 767px) {
-    .main-wrapper{
+    .wrapper{
         width: calc(100% - 48px);
+    }
+    body{
+        /* Panaikint užbaigus projektą */
+        background-color: #251749;
     }
 }
