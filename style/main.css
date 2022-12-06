@@ -133,10 +133,14 @@ header,
     background-color: var(--primary-midnight-green);
 }
 
+header {
+    padding-top: 1px;
+}
 /* karolis dirba čia */
 .header--text-container {
     display: flex;
     align-items: center;
+    margin-top: 73px;
 }
 header img {
     width: 157.5px;
@@ -154,9 +158,8 @@ header nav a+a {
 }
 header nav a+button {
     /* "contact us" Button */
-    margin-left: 577px;
+    /* margin-left: 577px; */
 }
-
 /* karolis baigia dirbti čia */
 
 #index-advantages-section,
