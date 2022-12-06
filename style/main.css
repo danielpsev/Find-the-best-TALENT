@@ -29,6 +29,40 @@ body{
     /* Panaikint užbaigus projektą */
     background-color: #263159;
 }
+.btn-type-1{
+    width: 153px;
+    height: 48px;
+    background: unset;
+    border: 2px solid #fff;
+    border-radius: 24px;
+}
+.btn-type-1:hover{
+    cursor: pointer;
+    background: #fff;
+    color: var(--primary-midnight-green);
+}
+.btn-primary__light{
+    color: var(--primary-white);
+}
+.btn-primary__light:hover{
+    background-color: var(--primary-white);
+}
+.btn-primary__light:disabled{
+    border: 2px solid #406367;
+    color: #406367;
+}
+.btn-secondary__light{
+
+}
+.btn-primary__dark{
+
+}
+.btn-primary__dark:hover{
+
+}
+.btn-primary__dark:disabled{
+
+}
 .wrapper{
     width: calc(100% - 330px);
     margin: 0 auto;
