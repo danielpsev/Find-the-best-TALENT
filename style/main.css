@@ -135,11 +135,9 @@ header,
 }
 
 #index-advantages-section,
-#about-clients-section,
-footer{
+#about-clients-section{
     background-color: var(--secondary-sacramento-state-green);
 }
-
 #index-stories-section,
 #about-stuff-section{
     background-color: var(--secondary-deep-jungle-green);
@@ -150,10 +148,13 @@ footer{
 }
 footer{
     padding: 1px;
+    background-color: var(--secondary-dark-green);
 }
 .footer-inner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 
+    "ftr-f-box ftr-adr-box ftr-sm-box-container"
+    "ftr-f-box ftr-adr-box ftr-copyright";
     margin: 48px 0px;
 }
 .footer-logo-img{
@@ -187,7 +188,8 @@ footer nav ul li a:hover{
 .footer-socmedia-copyright-box{
 
 }
-.footer-soc-media-container{
+.footer-soc-media-container,
+.footer-copyright{
     text-align: right;
 }
 .footer-soc-media-container a:not(:first-child){
@@ -204,6 +206,22 @@ footer nav ul li a:hover{
 .footer-copyright{
     color: #99A8A9;
 }
+.footer-first-box{
+    grid-area: ftr-f-box;
+    /* background-color: red; */
+}
+.footer-address-box{
+    grid-area: ftr-adr-box;
+    /* background-color: purple; */
+}
+.footer-soc-media-container{
+    grid-area: ftr-sm-box-container;
+    /* background-color: green; */
+}
+.footer-copyright{
+    grid-area: ftr-copyright;
+    /* background-color: violet; */
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper{
@@ -212,6 +230,21 @@ footer nav ul li a:hover{
     body{
         /* Panaikint užbaigus projektą */
         background-color: #495579;
+    }
+    .footer-inner{
+        grid-template-areas: 
+        "ftr-f-box . ftr-adr-box"
+        "ftr-sm-box-container . ftr-copyright";
+    }
+    footer nav{
+        margin-top: 53px;
+    }
+    .footer-address-box p{
+        text-align: right;
+    }
+    .footer-soc-media-container{
+        margin-top: 33px;
+        text-align: left;
     }
 }
 /*Kodas skirtas mobile*/
@@ -222,5 +255,33 @@ footer nav ul li a:hover{
     body{
         /* Panaikint užbaigus projektą */
         background-color: #251749;
+    }
+    .footer-inner{
+        grid-template-areas: 
+        "ftr-f-box"
+        "ftr-adr-box"
+        "ftr-sm-box-container"
+        "ftr-copyright";
+    }
+    .footer-first-box,
+    .footer-address-box,
+    .footer-soc-media-container,
+    .footer-copyright{
+        margin: 0 auto;
+    }
+    footer nav{
+        margin-top: 24px;
+    }
+    .footer-address-box{
+        margin-top: 24px;
+    }
+    .footer-address-box p{
+        text-align: center;
+    }
+    .footer-soc-media-container{
+        margin-top: 40px;
+    }
+    .footer-copyright{
+        margin-top: 16px;
     }
 }
