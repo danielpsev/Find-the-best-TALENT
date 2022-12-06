@@ -29,6 +29,51 @@ body{
     /* Panaikint užbaigus projektą */
     background-color: #263159;
 }
+.btn-type-1{
+    width: 153px;
+    height: 48px;
+    background: unset;
+    border: 2px solid #fff;
+    border-radius: 24px;
+}
+.btn-type-1:hover{
+    cursor: pointer;
+    background: #fff;
+    color: var(--primary-midnight-green);
+}
+.btn-primary__light{
+    color: var(--primary-white);
+}
+.btn-primary__light:hover{
+    background-color: var(--primary-white);
+}
+.btn-primary__light:disabled{
+    border: 2px solid #406367;
+    color: #406367;
+}
+.btn-primary__dark{
+    color: var(--secondary-sacramento-state-green);
+    border: 2px solid var(--secondary-sacramento-state-green);
+}
+.btn-primary__dark:hover{
+    background-color: var(--secondary-sacramento-state-green);
+    color: var(--primary-white);
+}
+.btn-primary__dark:disabled{
+    color: #BFCBCC;
+    border: 2px solid #BFCBCC;
+}
+.btn-secondary__light{
+    background-color: var(--primary-white);
+    color: var(--secondary-dark-green);
+    border: unset;
+}
+.btn-secondary__light:hover{
+    background-color: var(--secondary-rapture-blue);
+}
+.btn-secondary__light:disabled{
+    background-color: #406367;
+}
 .wrapper{
     width: calc(100% - 330px);
     margin: 0 auto;
