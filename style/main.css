@@ -22,8 +22,11 @@
     margin: 0;
     font-family: Livvic-SemiBold;
 }
-a{
+a,
+a:visited,
+a:active{
     text-decoration: none;
+    color: unset;
 }
 body{
     /* Panaikint užbaigus projektą */
@@ -147,7 +150,61 @@ footer{
 .banner-container{
     background-color: var(--primary-light-coral);
 }
+.mobile-nav-container{
+	position: fixed;
+    top: 0;
+    right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);	
+}
+.mobile-nav-inner{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 255px;
+    height: 100%;
+	background-color: var(--secondary-police-blue);
+    padding: 57px 26px;
+}
+.mobile-nav-inner:after{
+    position: absolute;
+    content: '';
+    right: -100px;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+}
+p.mobile-nav-close{
+    text-align: right;
+}
+.mobile-nav-close-icon{
 
+}
+.mobile-nav-close-icon:hover{
+    cursor: pointer;
+}
+.mobile-nav-container ul{
+    margin-top: 40px;
+    list-style: none;
+}
+.mobile-nav-container ul li{
+    margin-top: 24px;
+}
+.mobile-nav-container ul li a{
+    color: var(--primary-white);
+}
+.mobile-nav-contact-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.mobile-nav-contact-btn{
+    margin-top: 36px;
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper{
