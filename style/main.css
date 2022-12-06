@@ -24,6 +24,7 @@
 }
 a{
     text-decoration: none;
+    color: unset;
 }
 body{
     /* Panaikint užbaigus projektą */
@@ -147,7 +148,62 @@ footer{
 .banner-container{
     background-color: var(--primary-light-coral);
 }
+footer{
+    padding: 1px;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0px;
+}
+.footer-logo-img{
+    width: 160px;
+    height: 40.63px;
+}
+footer nav{
+    margin-top: 24.89px;
+}
+footer nav ul{
+    list-style: none;
+}
+footer nav ul li{
+    display: inline-block;
+}
+footer nav ul li:not(:first-child){
+    margin-left: 40px;
+}
+footer nav ul li a{
+    color: var(--primary-white);
+}
+footer nav ul li a:hover{
+    color: var(--primary-light-coral);
+}
+.footer-address-box{
+    margin-left: 124.97px;
+}
+.footer-address-box p{
+    color: var(--secondary-police-blue);
+}
+.footer-socmedia-copyright-box{
 
+}
+.footer-soc-media-container{
+    text-align: right;
+}
+.footer-soc-media-container a:not(:first-child){
+    margin-left: 16px;
+}
+.footer-soc-media-container img{
+    width: 24px;
+    height: 24px;
+}
+.footer-copyright{
+    margin-top: 51px;
+}
+.footer-address-box p,
+.footer-copyright{
+    color: #99A8A9;
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper{
