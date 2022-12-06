@@ -54,6 +54,32 @@ header,
     background-color: var(--primary-midnight-green);
 }
 
+/* karolis dirba čia */
+.header--text-container {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 157.5px;
+    height: 40px;
+}
+
+header nav {
+    /* Navbar container */
+    margin-left: 82.5px;
+}
+
+header nav a+a {
+    /* Link "about" */
+    margin-left: 40px;
+}
+header nav a+button {
+    /* "contact us" Button */
+    margin-left: 577px;
+}
+
+/* karolis baigia dirbti čia */
+
 #index-advantages-section,
 #about-clients-section,
 footer{
