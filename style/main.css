@@ -231,6 +231,10 @@ footer nav ul li a:hover{
         /* Panaikint užbaigus projektą */
         background-color: #495579;
     }
+    .footer-logo-img{
+        width: 94.5px;
+        height: 24px;
+    }
     .footer-inner{
         grid-template-areas: 
         "ftr-f-box . ftr-adr-box"
@@ -269,6 +273,9 @@ footer nav ul li a:hover{
     .footer-copyright{
         margin: 0 auto;
     }
+    .footer-first-box{
+        text-align: center;
+    }
     footer nav{
         margin-top: 24px;
     }
@@ -283,5 +290,6 @@ footer nav ul li a:hover{
     }
     .footer-copyright{
         margin-top: 16px;
+        text-align: center;
     }
 }
