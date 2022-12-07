@@ -166,10 +166,10 @@ header,
 .banner-inner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 76px 0px;
 }
 .banner-title{
-    text-align: center;
     color: var(--secondary-sacramento-state-green);
 }
 footer{
@@ -279,9 +279,6 @@ footer nav ul li a{
         width: calc(100% - 196px);
         margin: 0 auto;
     }
-    .banner-inner{
-        flex-direction: column;
-    }
     .banner-btn{
         margin-top: 24px;
     }
@@ -317,6 +314,12 @@ footer nav ul li a{
     body{
         /* Panaikint užbaigus projektą */
         background-color: #251749;
+    }
+    .banner-inner{
+        flex-direction: column;
+    }
+    .banner-title{
+        text-align: center;
     }
     .footer-inner{
         grid-template-areas: 
