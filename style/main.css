@@ -200,6 +200,12 @@ footer nav ul li a:hover{
     width: 24px;
     height: 24px;
 }
+.footer-soc-media-container .soc-media-icon path{
+    fill: var(--primary-white);
+}
+.footer-soc-media-container .soc-media-icon:hover path{
+    fill: var(--primary-light-coral);
+}
 .footer-copyright{
     margin-top: 51px;
 }
