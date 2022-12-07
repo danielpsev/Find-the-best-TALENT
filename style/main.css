@@ -29,6 +29,9 @@ body{
     /* Panaikint užbaigus projektą */
     background-color: #263159;
 }
+button[disabled]:hover{
+    cursor: not-allowed;
+}
 .btn-type-1{
     width: 153px;
     height: 48px;
@@ -47,7 +50,9 @@ body{
 .btn-primary__light:hover{
     background-color: var(--primary-white);
 }
-.btn-primary__light:disabled{
+.btn-primary__light:disabled,
+.btn-primary__light:disabled:hover{
+    background: unset;
     border: 2px solid #406367;
     color: #406367;
 }
@@ -59,7 +64,9 @@ body{
     background-color: var(--secondary-sacramento-state-green);
     color: var(--primary-white);
 }
-.btn-primary__dark:disabled{
+.btn-primary__dark:disabled,
+.btn-primary__dark:disabled:hover{
+    background: unset;
     color: #BFCBCC;
     border: 2px solid #BFCBCC;
 }
@@ -71,7 +78,9 @@ body{
 .btn-secondary__light:hover{
     background-color: var(--secondary-rapture-blue);
 }
-.btn-secondary__light:disabled{
+.btn-secondary__light:disabled,
+.btn-secondary__light:disabled:hover{
+    color: var(--secondary-dark-green);
     background-color: #406367;
 }
 .wrapper{
