@@ -250,6 +250,9 @@ footer nav ul li a:hover{
         margin-top: 33px;
         text-align: left;
     }
+    footer nav ul li:not(:first-child){
+        margin-left: 24px;
+    }
 }
 /*Kodas skirtas mobile*/
 @media screen and (max-width: 767px) {
