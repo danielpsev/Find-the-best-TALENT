@@ -147,6 +147,7 @@ header,
     background-color: var(--primary-light-coral);
 }
 footer{
+    font-family: Livvic-SemiBold;
     padding: 1px;
     background-color: var(--secondary-dark-green);
 }
@@ -185,9 +186,9 @@ footer nav ul li a:hover{
 .footer-address-box p{
     color: var(--secondary-police-blue);
 }
-.footer-socmedia-copyright-box{
+/* .footer-socmedia-copyright-box{
 
-}
+} */
 .footer-soc-media-container,
 .footer-copyright{
     text-align: right;
@@ -222,6 +223,10 @@ footer nav ul li a:hover{
     grid-area: ftr-copyright;
     /* background-color: violet; */
 }
+footer nav ul li a{
+    font-size: 18px;
+    line-height: 28px;
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper{
@@ -249,6 +254,10 @@ footer nav ul li a:hover{
     .footer-soc-media-container{
         margin-top: 33px;
         text-align: left;
+    }
+    footer nav ul li a{
+        font-size: 15px;
+        line-height: 25px;
     }
 }
 /*Kodas skirtas mobile*/
