@@ -166,15 +166,21 @@ header nav div a:hover{
 .header-img--hamburger-icon {
     display: none;
 }
-
 .hamburger-menu {
+    display: none;
+}
+
+/* Hamburger menu -   */
+/* .hamburger-menu {
     position: absolute;
     top: 0;
     right: 0;
     border: 1px solid black;
     width: 67%;
     height: 100%;
-}
+} */
+
+
 /* karolis baigia dirbti čia */
 
 #index-advantages-section,
@@ -249,11 +255,6 @@ footer{
         height: 17px; 
         cursor: pointer;
     }
-
-   
-    
-
-
     /* karolis baigia dirbti čia */
 
     body{
