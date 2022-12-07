@@ -133,32 +133,47 @@ header,
     background-color: var(--primary-midnight-green);
 }
 
-header {
-    padding-top: 1px;
-}
 /* karolis dirba čia */
-.header--text-container {
-    display: flex;
-    align-items: center;
-    margin-top: 73px;
-}
-header img {
+/* ! Desktop */
+.header-img--talent {
     width: 157.5px;
     height: 40px;
 }
-
-header nav {
-    /* Navbar container */
+.header-flex-container {
+    padding-top: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav div {
+    /* Centers links in header */
+    display: flex;
+    align-items: center;
+}
+header nav div a{
+    color: var(--primary-white);
+}
+header nav div a:hover{
+    color: var(--primary-light-coral);
+}
+/* Home and About's margin-lefts */
+.header-link--home {
     margin-left: 82.5px;
 }
-
-header nav a+a {
-    /* Link "about" */
+.header-link--about {
     margin-left: 40px;
 }
-header nav a+button {
-    /* "contact us" Button */
-    /* margin-left: 577px; */
+.header-img--hamburger-icon {
+    display: none;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    width: 67%;
+    height: 100%;
 }
 /* karolis baigia dirbti čia */
 
@@ -182,6 +197,22 @@ footer{
     .wrapper{
         width: calc(100% - 75px);
     }
+
+/* karolis dirba čia */
+/* Header, Tablet */
+    .header-img--talent {
+        width: 126px;
+        height: 32px;
+    }
+    .header-link--home {
+        margin-left: 50px;
+    }
+    .header-link--about {
+        margin-left: 40px;
+    }
+    /* karolis baigia dirbti čia */
+
+
     body{
         /* Panaikint užbaigus projektą */
         background-color: #495579;
@@ -192,6 +223,39 @@ footer{
     .wrapper{
         width: calc(100% - 48px);
     }
+
+    /* karolis dirba čia */
+    /* Header, Mobile */
+    .header-img--talent {
+        width: 126px;
+        height: 32px;
+    }
+    .btn-type-1 {
+        display: none;
+    }
+    .header-link--home, .header-link--about {
+        display: none;
+    }
+   
+    /* hamburger */
+    .header-img--hamburger-icon {
+        display: block;
+        width: 20px;
+        height: 17px; 
+    }
+    .header-img--hamburger-icon:hover {
+        display: block;
+        width: 20px;
+        height: 17px; 
+        cursor: pointer;
+    }
+
+   
+    
+
+
+    /* karolis baigia dirbti čia */
+
     body{
         /* Panaikint užbaigus projektą */
         background-color: #251749;
