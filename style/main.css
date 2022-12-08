@@ -41,6 +41,8 @@ button[disabled]:hover{
 .btn-type-1{
     width: 153px;
     height: 48px;
+    font-size: 18px;
+    line-height: 28px;
     background: unset;
     border: 2px solid #fff;
     border-radius: 24px;
