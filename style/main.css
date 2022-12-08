@@ -349,7 +349,7 @@ footer nav ul li a{
         background-color: #495579;
     }
     .banner-container:after{
-        bottom: -25px;
+        bottom: -22px;
     }
     .banner-wrapper{
         width: calc(100% - 196px);
