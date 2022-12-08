@@ -396,7 +396,7 @@ footer nav ul li a{
         width: 126px;
         height: 32px;
     }
-    .btn-type-1 {
+    header .btn-type-1 {
         display: none;
     }
     .header-link--home, .header-link--about {
