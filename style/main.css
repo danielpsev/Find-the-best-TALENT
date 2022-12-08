@@ -30,7 +30,6 @@ a,
 a:visited,
 a:active{
     text-decoration: none;
-    color: unset;
 }
 body{
     /* Panaikint užbaigus projektą */
