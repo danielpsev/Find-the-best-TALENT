@@ -205,6 +205,56 @@ header nav div a:hover{
 #about-stuff-section{
     background-color: var(--secondary-deep-jungle-green);
 }
+#index-advantages-section{
+    position: relative;
+    padding: 1px;
+}
+#index-advantages-section:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 244px;
+    background-image: url(../assets/images/bg-pattern-home-3.svg);
+    background-repeat: no-repeat;
+}   
+.index-advantages-section-inner{
+    display: flex;
+    margin-top: 198px;
+    margin-bottom: 140px;
+    color: var(--primary-white);
+}
+.advantages-title-box{
+    position: relative;
+    width: 445px;
+}
+.advantages-title-box:before{
+    content: '';
+    position: absolute;
+    top: -54px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-light-coral);
+}
+.advantages-box{
+    width: 540px;
+    margin-left: 125px;
+}
+.advantages-item{
+    display: flex;
+    margin-top: 16px;
+}
+.advantages-item-title-description-box{
+    margin-left: 23px;
+}
+.advantages-item-title{
+    color: var(--primary-light-coral);
+}
+.advantages-item-description{
+    margin-top: 16px;
+}
 #index-stories-section{
     position: relative;
     padding: 1px;
@@ -435,6 +485,15 @@ footer nav ul li a{
     body{
         /* Panaikint užbaigus projektą */
         background-color: #495579;
+    }
+    .index-advantages-section-inner{
+        flex-direction: column;
+    }
+    .advantages-box{
+        margin-left: 0px;
+    }
+    #index-advantages-section:before{
+        top: 0;
     }
     .stories-container{
         gap: 0px;
