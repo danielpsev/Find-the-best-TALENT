@@ -201,7 +201,90 @@ header nav div a:hover{
 #about-stuff-section{
     background-color: var(--secondary-deep-jungle-green);
 }
+#index-stories-section{
+    position: relative;
+    padding: 1px;
+}
+#index-stories-section:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 147px;
+    height: 100px;
+    background-image: url(../assets/images/bg-pattern-home-4-about-3.svg);
+    background-repeat: no-repeat;
+}
+#index-stories-section:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    background-image: url(../assets/images/bg-pattern-home-5.svg);
+    background-repeat: no-repeat;
+}
+.stories-section-wrapper{
+    margin: 140px 0px 151px 0px;
+}
+.stories-section--title{
+    text-align: center;
+    color: var(--primary-white);
+}
+.stories-section--title__clr{
+    color: var(--secondary-rapture-blue);
+}
+.stories-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stories-item{
+    position: relative;
+    margin-top: 92px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    color: var(--primary-white);
+    z-index: 1;
+}
+.stories-item:before{
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 67px;
+    height: 56px;
+    background-image: url(../assets/images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.stories-description{
 
+}
+.stories-user{
+    margin-top: 24px;
+    color: var(--secondary-rapture-blue);
+}
+.stories-user-position{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+}
+.stories-user-avatar {
+    margin-top: 32px;
+}
+.stories-user-avatar img{
+    width: 62px;
+    height: 62px;
+    border: 2px solid #C4FFFE;
+    border-radius: 50%;
+}
 .banner-container{
     position: relative;
     background-color: var(--primary-light-coral);
