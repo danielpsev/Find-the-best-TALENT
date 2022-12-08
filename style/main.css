@@ -159,6 +159,7 @@ header,
 }
 .header-flex-container {
     padding-top: 73px;
+    padding-bottom: 73px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -272,9 +273,9 @@ header nav div a:hover{
     background-repeat: no-repeat;
     z-index: -1;
 }
-.stories-description{
+/* .stories-description{
 
-}
+} */
 .stories-user{
     margin-top: 24px;
     color: var(--secondary-rapture-blue);
