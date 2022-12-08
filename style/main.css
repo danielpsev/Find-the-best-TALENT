@@ -38,6 +38,7 @@ body{
     background: unset;
     border: 2px solid #fff;
     border-radius: 24px;
+    transition: 0.3s;
 }
 .btn-type-1:hover{
     cursor: pointer;
@@ -151,12 +152,14 @@ footer{
     background-color: var(--primary-light-coral);
 }
 .mobile-nav-container{
+    display: none;
 	position: fixed;
     top: 0;
     right: 0;
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);	
+    z-index: 20;
 }
 .mobile-nav-inner{
     position: fixed;
@@ -165,7 +168,7 @@ footer{
     width: 255px;
     height: 100%;
 	background-color: var(--secondary-police-blue);
-    padding: 57px 26px;
+    padding: 56.37px 25.87px 0px 48px;
 }
 .mobile-nav-inner:after{
     position: absolute;
@@ -180,9 +183,6 @@ footer{
 p.mobile-nav-close{
     text-align: right;
 }
-.mobile-nav-close-icon{
-
-}
 .mobile-nav-close-icon:hover{
     cursor: pointer;
 }
@@ -194,13 +194,17 @@ p.mobile-nav-close{
     margin-top: 24px;
 }
 .mobile-nav-container ul li a{
+    transition: 0.3s;
     color: var(--primary-white);
+}
+.mobile-nav-container ul li a:hover{
+    color: var(--primary-light-coral);
 }
 .mobile-nav-contact-btn-container{
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    
+     */
 }
 .mobile-nav-contact-btn{
     margin-top: 36px;
