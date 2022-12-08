@@ -237,7 +237,7 @@ header nav div a:hover{
 }
 .stories-container{
     display: flex;
-    gap: 30px;
+    gap: 28px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -431,6 +431,16 @@ footer nav ul li a{
         /* Panaikint užbaigus projektą */
         background-color: #495579;
     }
+    .stories-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stories-section-wrapper{
+        margin: 100px 0px 100px 0px;
+    }
+    .stories-item{
+        width: 573px;
+    }
     .banner-container:after{
         bottom: -22px;
     }
@@ -503,6 +513,12 @@ footer nav ul li a{
     body{
         /* Panaikint užbaigus projektą */
         background-color: #251749;
+    }
+    .stories-section-wrapper{
+        margin: 140px 0px 164px 0px;
+    }
+    .stories-item{
+        width: 100%;
     }
     .banner-inner{
         flex-direction: column;
