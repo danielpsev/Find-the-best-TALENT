@@ -26,7 +26,9 @@
     margin: 0;
     font-family: Livvic-SemiBold;
 }
-a{
+a,
+a:visited,
+a:active{
     text-decoration: none;
     color: unset;
 }
@@ -43,6 +45,7 @@ button[disabled]:hover{
     background: unset;
     border: 2px solid #fff;
     border-radius: 24px;
+    transition: 0.3s;
 }
 .btn-type-1:hover{
     cursor: pointer;
@@ -336,6 +339,64 @@ footer{
     width: 160px;
     height: 40.63px;
 }
+.mobile-nav-container{
+    display: none;
+	position: fixed;
+    top: 0;
+    right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);	
+    z-index: 20;
+}
+.mobile-nav-inner{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 255px;
+    height: 100%;
+	background-color: var(--secondary-police-blue);
+    padding: 56.37px 25.87px 0px 48px;
+}
+.mobile-nav-inner:after{
+    position: absolute;
+    content: '';
+    right: -100px;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+}
+p.mobile-nav-close{
+    text-align: right;
+}
+.mobile-nav-close-icon:hover{
+    cursor: pointer;
+}
+.mobile-nav-container ul{
+    margin-top: 40px;
+    list-style: none;
+}
+.mobile-nav-container ul li{
+    margin-top: 24px;
+}
+.mobile-nav-container ul li a{
+    transition: 0.3s;
+    color: var(--primary-white);
+}
+.mobile-nav-container ul li a:hover{
+    color: var(--primary-light-coral);
+}
+.mobile-nav-contact-btn-container{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+     */
+}
+.mobile-nav-contact-btn{
+    margin-top: 36px;
+}
 footer nav{
     margin-top: 24.89px;
 }
@@ -389,19 +450,15 @@ footer nav ul li a:hover{
 }
 .footer-first-box{
     grid-area: ftr-f-box;
-    /* background-color: red; */
 }
 .footer-address-box{
     grid-area: ftr-adr-box;
-    /* background-color: purple; */
 }
 .footer-soc-media-container{
     grid-area: ftr-sm-box-container;
-    /* background-color: green; */
 }
 .footer-copyright{
     grid-area: ftr-copyright;
-    /* background-color: violet; */
 }
 footer nav ul li a{
     font-size: 18px;

@@ -13,26 +13,33 @@
 </head>
 <body>
     <div class="container">
-
         <header>
             <div class="wrapper">
                 <nav class="header-flex-container">
                     <div>
-                        <a href="#"><img src="./assets/images/logo.svg" class="header-img--talent" alt="talent"></a>
-                        <a href="#" class="header-link--home">home</a>    
-                        <a href="#" class="header-link--about">about</a>
+                        <a href="index.html"><img src="./assets/images/logo.svg" class="header-img--talent" alt="talent"></a>
+                        <a href="index.html" class="header-link--home">home</a>    
+                        <a href="pages/about.html" class="header-link--about">about</a>
                     </div>
                     <div>
-                        <button class="btn-type-1 btn-primary__light">contact us</button>
+                        <a href="pages/contact.html"><button class="btn-type-1 btn-primary__light">contact us</button></a>
                         <img src="./assets/images/icon-hamburger.svg" class="header-img--hamburger-icon" alt="hamburger">
-                        <!-- <div class="hamburger-menu">
-                            <button class="btn-type-1 btn-primary__light">contact us</button>
-                        </div> --->
                     </div>
                 </nav>
             </div>
         </header>
-
+		<div class="mobile-nav-container">
+			<div class="mobile-nav-inner">
+                <p class="mobile-nav-close"><svg class="mobile-nav-close-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#FFF" fill-rule="evenodd" d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"/></svg></p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="pages/about.html">about</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav-contact-btn-container"><a href="pages/about.html"><button class="btn-type-1 btn-primary__light mobile-nav-contact-btn">contact us</button></a></div>
+            </div>
+		</div>
         <main>
             <section id="index-top-section">
                 <div class="wrapper">
