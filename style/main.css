@@ -478,12 +478,14 @@ footer nav ul li a{
 #about-stuff-section{
     position: relative;
     padding: 1px;
+    z-index: 1;
 }
 #about-stuff-section:before,
 #about-stuff-section:after{
     content: '';
     position: absolute;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 #about-stuff-section:before{
     top: 0;
@@ -560,13 +562,45 @@ footer nav ul li a{
     cursor: pointer;
     background-color: var(--secondary-rapture-blue);
 }
+.stuff-section-items-grid .item-main-content{
+    display: none;
+    text-align: center;
+}
+.stuff-section-items-grid .item-second-content{
+    width: calc(100% - 96px);
+    text-align: center;
+}
+.stuff-section-items-grid .item-second--description{
+    color: var(--primary-white);
+}
+.stuff-section-items-grid .item-second--soc-media{
+    margin-top: 24px;
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.stuff-section-items-grid .item-second--soc-media path{
+    fill: var(--primary-white);
+}
+.stuff-section-items-grid .item-second--soc-media svg:hover path{
+    cursor: pointer;
+    fill: var(--primary-light-coral);
+}
+.stuff-section-items-grid .item--more-information-second-btn svg{
+    transform: rotate(45deg);
+}
+.stuff-section-items-grid .item--more-information-second-btn{
+    background-color: var(--secondary-rapture-blue);
+}
+.stuff-section-items-grid .item--more-information-second-btn:hover{
+    background-color: var(--primary-light-coral);
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper{
         width: calc(100% - 75px);
     }
-
-/* karolis dirba čia */
 /* Header, Tablet */
     .header-img--talent {
         width: 126px;
@@ -578,9 +612,6 @@ footer nav ul li a{
     .header-link--about {
         margin-left: 40px;
     }
-    /* karolis baigia dirbti čia */
-
-
     h2{
         font-size: 32px;
         line-height: 32px;
@@ -647,8 +678,6 @@ footer nav ul li a{
     .wrapper{
         width: calc(100% - 48px);
     }
-
-    /* karolis dirba čia */
     /* Header, Mobile */
     .header-img--talent {
         width: 126px;
@@ -673,8 +702,6 @@ footer nav ul li a{
         height: 17px; 
         cursor: pointer;
     }
-    /* karolis baigia dirbti čia */
-
     body{
         /* Panaikint užbaigus projektą */
         background-color: #251749;
@@ -723,8 +750,16 @@ footer nav ul li a{
         margin-top: 16px;
         text-align: center;
     }
+    #about-stuff-section:before{
+        height: 100px;
+        background-position: 0px -100px;
+    }
     .stuff-section-items-grid{
+        grid-auto-rows: unset;
         grid-template-columns: 1fr;
         grid-row-gap: 52px;
+    }
+    .stuff-section-items-grid .item-box{
+        min-height: 253px;
     }
 }
