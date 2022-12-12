@@ -38,6 +38,11 @@ body{
 button[disabled]:hover{
     cursor: not-allowed;
 }
+.span-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-type-1{
     width: 153px;
     height: 48px;
