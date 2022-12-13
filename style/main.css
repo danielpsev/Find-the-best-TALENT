@@ -630,3 +630,105 @@ footer nav ul li a{
         text-align: center;
     }
 }
+
+#about-clients-section{
+    height: 437px;
+    position: relative;
+    padding: 1px;
+    overflow: hidden;
+    
+}
+.about-clients-header{
+    
+    height: 48px;
+    margin: 140px 100px auto 100px;
+    text-align: center;
+    color: var(--primary-white);
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-clients-header h1{
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+}
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid black;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.logo{
+    height: 30px;
+    width: 160px;
+}
+.logo1-5{
+    width: 130px;
+    height: 40px;
+}
+#about-clients-donut{
+    background-image: url(../assets/images/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+@media screen and (max-width: 767px) {
+    .logo-container{
+        align-items: center; 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 50px;
+        margin: auto auto 88px auto;
+        width: 327px;
+        height: 405px;
+    }
+    #about-clients-donut{
+        left: -100px;
+        top: -100px;
+        z-index: 6;
+    }
+    .about-clients-header{
+       margin: 88px auto auto auto;
+       width: 327px;
+       text-align: justify;
+    }
+    .about-clients-header h1{
+        content: "";
+        display: inline-block;
+        font-size: 35px;
+    }
+    #about-clients-section {
+        height: 632px;
+        overflow: hidden;
+    }
+    .logo{
+        margin-top: 10px;
+    }
+   .logo1-5{
+        width: 110px;
+        height: 40px;
+    }
+ }
+@media screen and (max-width: 1439px) {
+    #about-clients-donut{
+        top: -100px;
+    }
+    .about-clients-header{
+        margin: 140px auto auto auto;
+        width: 457px;
+        text-align: justify; 
+    }
+    .logo-container{
+        margin: auto auto 100px auto;    
+    }
+        
+    }
