@@ -217,39 +217,5 @@
         </footer>
     </div>
     <script src="../script/main.js"></script>
-	<script>
-window.onload = function() {
-	let flippable = document.getElementsByClassName("flippable");
-        var anchors = document.getElementsByClassName('item--more-information-btn');
-        for(var i = 0; i < anchors.length; i++) {
-           // var anchor = anchors[i];
-            anchors[i].onclick = function(f) {
-                let index = Array.from(anchors).indexOf(this);
-				console.log(index);
-				flippable[index].classList.toggle("flipped-item");
-                anchors[index].classList.toggle("item--more-information-second-btn");
-                anchors[index].classList.toggle("item--more-information-main-btn");
-				
-            }
-        }
-}
-/*
-window.onload = function() {
-//item--more-information-btn
-	let flippable = document.getElementsByClassName("flippable");
-        var anchors = document.getElementsByClassName('flippable');
-        for(var i = 0; i < anchors.length; i++) {
-           // var anchor = anchors[i];
-            anchors[i].onclick = function(f) {
-                this.classList.toggle("flipped-item");
-                let index = Array.from(anchors).indexOf(this);
-				
-				
-            }
-        }
-}
-*/
-	
-	</script>
 </body>
 </html>
