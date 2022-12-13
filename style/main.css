@@ -108,7 +108,41 @@ button[disabled]:hover{
 .headings-h1__small{
     font-size: 64px;
     line-height: 56px;
+    color: white;
 }
+.about-top-section-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.about-top-section-p{
+width: 730px;
+color: white;
+}
+#about-top-section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../assets/images/bg-pattern-about-1-mobile-nav-1.svg);
+    height: 200px;
+    width: 100px;
+    z-index: -1;
+}
+#about-top-section{
+    position: relative;
+    padding: 1px;
+    z-index: 1;
+}
+.about-top-section-p::before{
+    content: '';
+    display: block;
+    margin-bottom: 40px;
+    height: 4px;
+    width: 50px;
+    background-color: var(--primary-light-coral) ;
+}
+
 .headings-h1__large{
     font-size: 100px;
     line-height: 100px;
@@ -201,6 +235,8 @@ header nav div a:hover{
 
 
 /* karolis baigia dirbti čia */
+
+
 
 #index-advantages-section,
 #about-clients-section{
@@ -542,6 +578,22 @@ footer nav ul li a{
         font-size: 15px;
         line-height: 25px;
     }
+    .about-top-section-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-top-section-p{
+        text-align: center;
+        margin: 34px;
+        color: white;
+    }
+    .about-top-section-p::before{
+        display: none;
+    }
+    .about-top-section-p .body-1{
+        font-size: 15px;
+        line-height: 28px;
+    }
 }
 /*Kodas skirtas mobile*/
 @media screen and (max-width: 767px) {
@@ -623,5 +675,8 @@ footer nav ul li a{
     .footer-copyright{
         margin-top: 16px;
         text-align: center;
+    }
+    #about-top-section::before{
+        height: 100px;
     }
 }
