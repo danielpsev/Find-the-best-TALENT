@@ -563,7 +563,7 @@ footer nav ul li a{
     background-color: var(--secondary-rapture-blue);
 }
 .stuff-section-items-grid .item-main-content{
-    display: none;
+    /*display: none;*/
     text-align: center;
 }
 .stuff-section-items-grid .item-second-content{
@@ -589,12 +589,32 @@ footer nav ul li a{
 }
 .stuff-section-items-grid .item--more-information-second-btn svg{
     transform: rotate(45deg);
+    transition: 0.2s;
 }
 .stuff-section-items-grid .item--more-information-second-btn{
     background-color: var(--secondary-rapture-blue);
 }
 .stuff-section-items-grid .item--more-information-second-btn:hover{
     background-color: var(--primary-light-coral);
+}
+.stuff-section-items-grid .item-box{
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+}
+.stuff-section-items-grid .item-main-content{
+	z-index: 10;
+}
+.stuff-section-items-grid .item-second-content{
+	transform: rotateY(-180deg);
+}
+.stuff-section-items-grid .item-main-content,
+.stuff-section-items-grid .item-second-content{
+	backface-visibility: hidden;
+	position: absolute;
+}
+.flipped-item{
+	transform: rotateY(-180deg);
 }
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
