@@ -625,3 +625,97 @@ footer nav ul li a{
         text-align: center;
     }
 }
+
+/*Form*/
+div.contact-form  input[type=text] { 
+    outline: none;
+    border-width: 0 0 2px;
+    background-color: transparent;
+    padding: 20px;
+    width: 80%;
+    border-color: #BFCBCC;
+    caret-color: transparent;
+}
+
+div.contact-form  input[type=text]:focus, div.contact-form  input[type=text]:active{
+    border-color: #79C8C7;
+}
+
+
+
+div.contact-form input[name="submit"] {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: none;
+    color: #004047;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF
+}
+
+input, select, textarea{
+    color: #FFFFFF;
+}
+
+div.contact-form input[name="Message"] {
+    padding-bottom: 50px;
+}
+
+#contact-main {
+    display: inline-flex;
+}
+::placeholder { 
+    color: #BFCBCC;
+    font-family: Livvic-SemiBold;
+}
+
+#contact-aside {
+    width: 50%;
+}
+
+div.contact-form {
+    width: 50%;
+}
+
+/*Kodas skirtas mobile*/
+@media screen and (max-width: 767px) {
+
+    #contact-main {
+        display: block;
+    }
+
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
+    }
+}
+  
+/* Kodas skirtas tablet'ui */
+@media screen and (max-width: 1439px) {
+
+    #contact-main {
+        display: block;
+    }
+
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
+        padding: 100px;
+    }
+
+    div.contact-form  input[type=text] {
+        width: 100%;
+    } 
+}
+
