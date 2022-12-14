@@ -36,19 +36,22 @@ a:visited,
 a:active {
     text-decoration: none;
 }
-body{
+
+body {
     min-width: 375px;
 }
 
 button[disabled]:hover {
     cursor: not-allowed;
 }
-.span-btn{
+
+.span-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn-type-1{
+
+.btn-type-1 {
     width: 153px;
     height: 48px;
     font-size: 18px;
@@ -117,8 +120,9 @@ button[disabled]:hover {
     width: calc(100% - 330px);
     margin: 0 auto;
 }
+
 .wrapper,
-.banner-wrapper{
+.banner-wrapper {
     max-width: 1440px;
 }
 
@@ -139,16 +143,19 @@ h3 {
     line-height: 56px;
     color: white;
 }
-.about-top-section-box{
+
+.about-top-section-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
 }
-.about-top-section-p{
-width: 730px;
-color: white;
+
+.about-top-section-p {
+    width: 730px;
+    color: white;
 }
-#about-top-section::before{
+
+#about-top-section::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,18 +165,20 @@ color: white;
     width: 100px;
     z-index: -1;
 }
-#about-top-section{
+
+#about-top-section {
     position: relative;
     padding: 1px;
     z-index: 1;
 }
-.about-top-section-p::before{
+
+.about-top-section-p::before {
     content: '';
     display: block;
     margin-bottom: 40px;
     height: 4px;
     width: 50px;
-    background-color: var(--primary-light-coral) ;
+    background-color: var(--primary-light-coral);
 }
 
 .headings-h1__large {
@@ -330,7 +339,7 @@ header nav div a:hover {
     background-image: url(../assets/images/bg-pattern-home-1.svg);
     width: 200px;
     height: 200px;
-    margin: 79px 0 0;
+    margin: 65px 0 0;
 
     left: -100px;
 }
@@ -343,11 +352,13 @@ header nav div a:hover {
 
     position: absolute;
     right: 0;
-    top: 409px;
+    top: 410px;
 }
 
 /* karolis baigia dirbti čia */
 
+/* zz */
+/* Daniel's darbas, + Karolio zz's */
 #index-advantages-section,
 #about-clients-section {
     background-color: var(--secondary-sacramento-state-green);
@@ -357,11 +368,13 @@ header nav div a:hover {
 #about-stuff-section {
     background-color: var(--secondary-deep-jungle-green);
 }
-#index-advantages-section{
+
+/* #index-advantages-section {
     position: relative;
     padding: 1px;
-}
-#index-advantages-section:before{
+} */
+
+/* #index-advantages-section:before {
     content: '';
     position: absolute;
     right: 0;
@@ -370,18 +383,41 @@ header nav div a:hover {
     height: 244px;
     background-image: url(../assets/images/bg-pattern-home-3.svg);
     background-repeat: no-repeat;
-}   
-.index-advantages-section-inner{
+} */
+
+/* karolis section2 */
+section.zz {
+    position: relative;
+}
+
+.iasi--bg-img-1 {
+    position: absolute;
+    background-image: url(../assets/images/bg-pattern-home-3.svg);
+    width: 100px;
+    background-repeat: no-repeat;
+    height: 244px;
+    right: 0;
+    bottom: 0;
+}
+
+.index-advantages-section-inner {
     display: flex;
-    margin-top: 198px;
-    margin-bottom: 140px;
+    justify-content: space-between;
+
+    /* margin-top: 198px;
+    margin-bottom: 140px; */
+    padding-top: 198px;
+    padding-bottom: 140px;
     color: var(--primary-white);
 }
-.advantages-title-box{
+
+
+.advantages-title-box {
     position: relative;
     width: 445px;
 }
-.advantages-title-box:before{
+
+.advantages-title-box:before {
     content: '';
     position: absolute;
     top: -54px;
@@ -390,24 +426,38 @@ header nav div a:hover {
     height: 4px;
     background-color: var(--primary-light-coral);
 }
-.advantages-box{
+
+.advantages-box {
+    position: relative;
+    top: -12px;
     width: 540px;
-    margin-left: 125px;
 }
-.advantages-item{
+
+.advantages-item {
     display: flex;
     margin-top: 16px;
 }
-.advantages-item-title-description-box{
+
+.advantages-item--row-1 {
+    padding-left: 0.5em;
+}
+
+.advantages-item-title-description-box {
     margin-left: 23px;
 }
-.advantages-item-title{
+
+.advantages-item-title {
     color: var(--primary-light-coral);
 }
-.advantages-item-description{
+
+.advantages-item-description {
     margin-top: 16px;
 }
-#index-stories-section{
+
+/* zz */
+
+
+#index-stories-section {
     position: relative;
     padding: 1px;
 }
@@ -714,41 +764,47 @@ footer nav ul li a {
     line-height: 28px;
 }
 
-#about-stuff-section{
+#about-stuff-section {
     position: relative;
     padding: 1px;
     z-index: 1;
 }
+
 #about-stuff-section:before,
-#about-stuff-section:after{
+#about-stuff-section:after {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
     z-index: -1;
 }
-#about-stuff-section:before{
+
+#about-stuff-section:before {
     top: 0;
     left: -100px;
     width: 200px;
     height: 200px;
     background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
 }
-#about-stuff-section:after{
+
+#about-stuff-section:after {
     bottom: 0;
     right: 0;
     width: 147px;
     height: 100px;
     background-image: url(../assets/images/bg-pattern-home-4-about-3.svg);
 }
-.about-stuff-section-inner{
+
+.about-stuff-section-inner {
     margin-top: 140px;
     margin-bottom: 168px;
 }
-.about-stuff-section-title{
+
+.about-stuff-section-title {
     text-align: center;
     color: var(--primary-white);
 }
-.stuff-section-items-grid{
+
+.stuff-section-items-grid {
     margin-top: 64px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
@@ -757,7 +813,8 @@ footer nav ul li a {
     grid-row-gap: 76px;
     justify-content: center;
 }
-.stuff-section-items-grid .item-box{
+
+.stuff-section-items-grid .item-box {
     position: relative;
     display: flex;
     justify-content: center;
@@ -765,29 +822,34 @@ footer nav ul li a {
     flex-direction: column;
     background-color: var(--secondary-sacramento-state-green);
 }
-.stuff-section-items-grid .item--picture img{
+
+.stuff-section-items-grid .item--picture img {
     width: 96px;
     height: 96px;
     border: 2px solid #C4FFFE;
     border-radius: 50%;
 }
-.stuff-section-items-grid .item--name{
+
+.stuff-section-items-grid .item--name {
     margin-top: 16px;
     color: var(--secondary-rapture-blue);
 }
-.stuff-section-items-grid .item--description{
+
+.stuff-section-items-grid .item--description {
     color: var(--primary-white);
     font-style: italic;
 }
-.stuff-section-items-grid .item--description p{
+
+.stuff-section-items-grid .item--description p {
     font-family: Livvic-Regular;
     font-weight: 500;
 }
-.stuff-section-items-grid .item--more-information-btn{
+
+.stuff-section-items-grid .item--more-information-btn {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translate(-50%,50%);
+    transform: translate(-50%, 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -797,63 +859,78 @@ footer nav ul li a {
     border-radius: 50%;
     transition: 0.2s;
 }
-.stuff-section-items-grid .item--more-information-btn:hover{
+
+.stuff-section-items-grid .item--more-information-btn:hover {
     cursor: pointer;
     background-color: var(--secondary-rapture-blue);
 }
-.stuff-section-items-grid .item-main-content{
+
+.stuff-section-items-grid .item-main-content {
     /*display: none;*/
     text-align: center;
 }
-.stuff-section-items-grid .item-second-content{
+
+.stuff-section-items-grid .item-second-content {
     width: calc(100% - 96px);
     text-align: center;
 }
-.stuff-section-items-grid .item-second--description{
+
+.stuff-section-items-grid .item-second--description {
     color: var(--primary-white);
 }
-.stuff-section-items-grid .item-second--soc-media{
+
+.stuff-section-items-grid .item-second--soc-media {
     margin-top: 24px;
     margin-bottom: 63px;
     display: flex;
     justify-content: center;
     gap: 16px;
 }
-.stuff-section-items-grid .item-second--soc-media path{
+
+.stuff-section-items-grid .item-second--soc-media path {
     fill: var(--primary-white);
 }
-.stuff-section-items-grid .item-second--soc-media svg:hover path{
+
+.stuff-section-items-grid .item-second--soc-media svg:hover path {
     cursor: pointer;
     fill: var(--primary-light-coral);
 }
-.stuff-section-items-grid .item--more-information-second-btn svg{
+
+.stuff-section-items-grid .item--more-information-second-btn svg {
     transform: rotate(45deg);
     transition: 0.2s;
 }
-.stuff-section-items-grid .item--more-information-second-btn{
+
+.stuff-section-items-grid .item--more-information-second-btn {
     background-color: var(--secondary-rapture-blue);
 }
-.stuff-section-items-grid .item--more-information-second-btn:hover{
+
+.stuff-section-items-grid .item--more-information-second-btn:hover {
     background-color: var(--primary-light-coral);
 }
-.stuff-section-items-grid .item-box{
-	position: relative;
-	transform-style: preserve-3d;
-	transition: 0.5s;
+
+.stuff-section-items-grid .item-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
 }
-.stuff-section-items-grid .item-main-content{
-	z-index: 10;
+
+.stuff-section-items-grid .item-main-content {
+    z-index: 10;
 }
-.stuff-section-items-grid .item-second-content{
-	transform: rotateY(-180deg);
+
+.stuff-section-items-grid .item-second-content {
+    transform: rotateY(-180deg);
 }
+
 .stuff-section-items-grid .item-main-content,
-.stuff-section-items-grid .item-second-content{
-	backface-visibility: hidden;
-	position: absolute;
+.stuff-section-items-grid .item-second-content {
+    backface-visibility: hidden;
+    position: absolute;
 }
-.flipped-item{
-	transform: rotateY(-180deg);
+
+.flipped-item {
+    transform: rotateY(-180deg);
 }
 
 /* Kodas skirtas tablet'ui */
@@ -861,7 +938,8 @@ footer nav ul li a {
     .wrapper {
         width: calc(100% - 75px);
     }
-/* Header, Tablet */
+
+    /* Header, Tablet */
     .header-img--talent {
         width: 126px;
         height: 32px;
@@ -874,20 +952,54 @@ footer nav ul li a {
     .header-link--about {
         margin-left: 40px;
     }
-    h2{
+
+
+    /* Daniel's, Karolio darbas pradžia */
+    /* Build & manage dis... */
+
+    .index-advantages-section-inner {
+        flex-direction: column;
+    }
+
+    .iasi--bg-img-1 {
+        top: 0;
+    }
+
+    .index-advantages-section-inner {
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* Heading */
+    .advantages-title-box {
+        margin-bottom: 64px;
+        left: -3em;
+    }
+
+    .advantages-title-box:before {
+        top: -32px;
+    }
+
+    h2 {
         font-size: 32px;
         line-height: 32px;
     }
-    .index-advantages-section-inner{
-        flex-direction: column;
+
+    /* Paragraph -> Description box */
+    .advantages-item-description {
+        width: 478px;
     }
-    .advantages-box{
-        margin-left: 0px;
-    }
-    #index-advantages-section:before{
+
+
+    /* #index-advantages-section:before {
         top: 0;
-    }
-    .stories-container{
+    } */
+    /* Daniel's, Karolio darbo pabaiga */
+
+
+
+    .stories-container {
         gap: 0px;
         flex-direction: column;
         align-items: center;
@@ -945,14 +1057,14 @@ footer nav ul li a {
         line-height: 25px;
     }
 
-    .stuff-section-items-grid{
+    .stuff-section-items-grid {
         grid-template-columns: 281px 281px;
         grid-column-gap: 11px;
     }
-    
 
 
-    .about-top-section-box{
+
+    .about-top-section-box {
         flex-direction: column;
         align-items: center;
     }
@@ -960,16 +1072,18 @@ footer nav ul li a {
     /* ctrl s - išsaugo darbą/save'ina */
     /* ctrl shift p - live serveris */
 
-    .about-top-section-p{
+    .about-top-section-p {
         text-align: center;
         margin: 34px;
         color: white;
         width: 457px;
     }
-    .about-top-section-p::before{
+
+    .about-top-section-p::before {
         display: none;
     }
-    .about-top-section-p .body-1{
+
+    .about-top-section-p .body-1 {
         font-size: 15px;
         line-height: 28px;
         font-weight: 600;
@@ -977,7 +1091,7 @@ footer nav ul li a {
     }
 
     /* zz */
-     /* Find the best Talent */
+    /* Find the best Talent */
     /* bg-img-1 */
     .tc--bg-img-1 {
         display: none;
@@ -1032,6 +1146,7 @@ footer nav ul li a {
         right: 40px;
         top: 240px
     }
+
     /* Darbo pabaiga */
     /* zz */
 
@@ -1042,6 +1157,7 @@ footer nav ul li a {
     .wrapper {
         width: calc(100% - 48px);
     }
+
     /* Header, Mobile */
     .header-img--talent {
         width: 126px;
@@ -1114,6 +1230,71 @@ footer nav ul li a {
 
     /* karolis baigia dirbti čia */
 
+    /* Daniel's, Karolio darbas pradžia */
+    /* Build & manage dis... */
+    /* zz2 */
+
+    /* Container */
+
+    /* Container */
+    .index-advantages-section-inner {
+        padding-top: 114px;
+    }
+
+    /* Heading */
+    .advantages-title-box {
+        width: 240px;
+        height: 160px;
+
+        position: absolute;
+        left: 1.5em;
+    }
+
+    .advantages-item--row-1 {
+        margin-top: 14em;
+    }
+
+    .advantages-box {
+        width: 390px;
+    }
+
+    .aitdb-2,
+    .aitdb-3 {
+        /* position: relative;
+        left: 22em; */
+        padding-left: 7px;
+    }
+
+    /* Icons */
+    .advantages-item-icon {
+        position: absolute;
+        left: 10em;
+    }
+
+    /* Coral colored text */
+    .advantages-item-title-description-box {
+        margin-top: 90px;
+    }
+
+    .advantages-item-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Paragraph */
+    .advantages-item-description {
+        margin-top: 18px;
+        width: 327px;
+        height: 75px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+
+    /* Daniel's, Karolio darbo pabaiga */
+
     body {
         /* Panaikint užbaigus projektą */
         background-color: #251749;
@@ -1175,27 +1356,32 @@ footer nav ul li a {
         text-align: center;
     }
 
-    #about-stuff-section:before{
+    #about-stuff-section:before {
         height: 100px;
         background-position: 0px -100px;
     }
-    .stuff-section-items-grid{
+
+    .stuff-section-items-grid {
         grid-auto-rows: unset;
         grid-template-columns: 1fr;
         grid-row-gap: 52px;
     }
-    .stuff-section-items-grid .item-box{
+
+    .stuff-section-items-grid .item-box {
         min-height: 253px;
     }
-    .about-stuff-section-inner{
-       margin-top: 100px;}
+
+    .about-stuff-section-inner {
+        margin-top: 100px;
+    }
 
     /* Nikita mobile */
-    #about-top-section::before{
+    #about-top-section::before {
         height: 100px;
     }
-    .about-top-section-p{
-     margin-top: 16px;
+
+    .about-top-section-p {
+        margin-top: 16px;
         width: 327px;
     }
 }
