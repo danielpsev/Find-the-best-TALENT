@@ -12,3 +12,21 @@ window.onclick = function(event) {
 		mobileNav.style.display = "none";
     }
 }
+
+//window.onload = function() {
+let flippable = document.getElementsByClassName("flippable");
+if(flippable.length){
+	var anchors = document.getElementsByClassName('item--more-information-btn');
+	for(var i = 0; i < anchors.length; i++) {
+	   // var anchor = anchors[i];
+		anchors[i].onclick = function(f) {
+			let index = Array.from(anchors).indexOf(this);
+			flippable[index].classList.toggle("flipped-item");
+			anchors[index].classList.toggle("item--more-information-second-btn");
+			anchors[index].classList.toggle("item--more-information-main-btn");
+			
+		}
+	}
+}
+
+//}

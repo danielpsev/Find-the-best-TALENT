@@ -36,10 +36,8 @@ a:visited,
 a:active {
     text-decoration: none;
 }
-
-body {
-    /* Panaikint užbaigus projektą */
-    background-color: #263159;
+body{
+    min-width: 375px;
 }
 
 button[disabled]:hover {
@@ -118,6 +116,10 @@ button[disabled]:hover {
 .wrapper {
     width: calc(100% - 330px);
     margin: 0 auto;
+}
+.wrapper,
+.banner-wrapper{
+    max-width: 1440px;
 }
 
 .headings-h1__large,
@@ -665,14 +667,154 @@ footer nav ul li a {
     line-height: 28px;
 }
 
+#about-stuff-section{
+    position: relative;
+    padding: 1px;
+    z-index: 1;
+}
+#about-stuff-section:before,
+#about-stuff-section:after{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#about-stuff-section:before{
+    top: 0;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
+}
+#about-stuff-section:after{
+    bottom: 0;
+    right: 0;
+    width: 147px;
+    height: 100px;
+    background-image: url(../assets/images/bg-pattern-home-4-about-3.svg);
+}
+.about-stuff-section-inner{
+    margin-top: 140px;
+    margin-bottom: 168px;
+}
+.about-stuff-section-title{
+    text-align: center;
+    color: var(--primary-white);
+}
+.stuff-section-items-grid{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-auto-rows: 253px;
+    grid-column-gap: 30px;
+    grid-row-gap: 76px;
+    justify-content: center;
+}
+.stuff-section-items-grid .item-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-sacramento-state-green);
+}
+.stuff-section-items-grid .item--picture img{
+    width: 96px;
+    height: 96px;
+    border: 2px solid #C4FFFE;
+    border-radius: 50%;
+}
+.stuff-section-items-grid .item--name{
+    margin-top: 16px;
+    color: var(--secondary-rapture-blue);
+}
+.stuff-section-items-grid .item--description{
+    color: var(--primary-white);
+    font-style: italic;
+}
+.stuff-section-items-grid .item--description p{
+    font-family: Livvic-Regular;
+    font-weight: 500;
+}
+.stuff-section-items-grid .item--more-information-btn{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--primary-light-coral);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.stuff-section-items-grid .item--more-information-btn:hover{
+    cursor: pointer;
+    background-color: var(--secondary-rapture-blue);
+}
+.stuff-section-items-grid .item-main-content{
+    /*display: none;*/
+    text-align: center;
+}
+.stuff-section-items-grid .item-second-content{
+    width: calc(100% - 96px);
+    text-align: center;
+}
+.stuff-section-items-grid .item-second--description{
+    color: var(--primary-white);
+}
+.stuff-section-items-grid .item-second--soc-media{
+    margin-top: 24px;
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.stuff-section-items-grid .item-second--soc-media path{
+    fill: var(--primary-white);
+}
+.stuff-section-items-grid .item-second--soc-media svg:hover path{
+    cursor: pointer;
+    fill: var(--primary-light-coral);
+}
+.stuff-section-items-grid .item--more-information-second-btn svg{
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+.stuff-section-items-grid .item--more-information-second-btn{
+    background-color: var(--secondary-rapture-blue);
+}
+.stuff-section-items-grid .item--more-information-second-btn:hover{
+    background-color: var(--primary-light-coral);
+}
+.stuff-section-items-grid .item-box{
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+}
+.stuff-section-items-grid .item-main-content{
+	z-index: 10;
+}
+.stuff-section-items-grid .item-second-content{
+	transform: rotateY(-180deg);
+}
+.stuff-section-items-grid .item-main-content,
+.stuff-section-items-grid .item-second-content{
+	backface-visibility: hidden;
+	position: absolute;
+}
+.flipped-item{
+	transform: rotateY(-180deg);
+}
+
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper {
         width: calc(100% - 75px);
     }
-
-    /* karolis dirba čia */
-    /* Header */
+/* Header, Tablet */
     .header-img--talent {
         width: 126px;
         height: 32px;
@@ -685,78 +827,11 @@ footer nav ul li a {
     .header-link--about {
         margin-left: 40px;
     }
-
-    /* Find the best Talent */
-    /* bg-img-1 */
-    .tc--bg-img-1 {
-        display: none;
-    }
-
-    /* heading */
-    .tc--h1 {
-        text-align: center;
-        width: 683px;
-        height: 112px;
-
-        font-size: 64px;
-        line-height: 56px;
-
-        padding: 0 2.5em 0 2.5em;
-        margin: 0 0 24px 0;
-    }
-
-    .headings-h1__large {
-        font-size: 64px;
-        line-height: 56px;
-    }
-
-    /* paragraph rectangle */
-    .pc--rectangle {
-        display: none;
-    }
-
-    .pc--p {
-        text-align: center;
-        font-size: 15px;
-        line-height: 25px;
-
-        width: 457px;
-        height: 87px;
-    }
-
-    .talent-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    /* paragraph container */
-    .paragraph-container {
-        height: 340px;
-    }
-
-    /* bg-img-2 */
-    .pc--bg-img-2 {
-
-        right: 40px;
-        top: 240px
-    }
-
-
-    /* karolis baigia dirbti čia */
-
-
-    h2 {
+    h2{
         font-size: 32px;
         line-height: 32px;
     }
-
-    body {
-        /* Panaikint užbaigus projektą */
-        background-color: #495579;
-    }
-
-    .stories-container {
+    .stories-container{
         gap: 0px;
         flex-direction: column;
         align-items: center;
@@ -814,6 +889,13 @@ footer nav ul li a {
         line-height: 25px;
     }
 
+    .stuff-section-items-grid{
+        grid-template-columns: 281px 281px;
+        grid-column-gap: 11px;
+    }
+    
+
+
     .about-top-section-box{
         flex-direction: column;
         align-items: center;
@@ -845,9 +927,6 @@ footer nav ul li a {
     .wrapper {
         width: calc(100% - 48px);
     }
-
-    /* karolis dirba čia */
-    /* karolis mobile */
     /* Header, Mobile */
     .header-img--talent {
         width: 126px;
@@ -876,6 +955,7 @@ footer nav ul li a {
         height: 17px;
         cursor: pointer;
     }
+
 
     /* Find the best Talent */
     /* talent container */
@@ -979,6 +1059,21 @@ footer nav ul li a {
         margin-top: 16px;
         text-align: center;
     }
+
+    #about-stuff-section:before{
+        height: 100px;
+        background-position: 0px -100px;
+    }
+    .stuff-section-items-grid{
+        grid-auto-rows: unset;
+        grid-template-columns: 1fr;
+        grid-row-gap: 52px;
+    }
+    .stuff-section-items-grid .item-box{
+        min-height: 253px;
+    }
+    .about-stuff-section-inner{
+       margin-top: 100px;
 
     /* Nikita mobile */
     #about-top-section::before{
