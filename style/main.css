@@ -578,14 +578,20 @@ footer nav ul li a{
         font-size: 15px;
         line-height: 25px;
     }
+
     .about-top-section-box{
         flex-direction: column;
         align-items: center;
     }
+
+    /* ctrl s - išsaugo darbą/save'ina */
+    /* ctrl shift p - live serveris */
+
     .about-top-section-p{
         text-align: center;
         margin: 34px;
         color: white;
+        width: 457px;
     }
     .about-top-section-p::before{
         display: none;
@@ -593,7 +599,10 @@ footer nav ul li a{
     .about-top-section-p .body-1{
         font-size: 15px;
         line-height: 28px;
+        font-weight: 600;
+        font-style: normal;
     }
+
 }
 /*Kodas skirtas mobile*/
 @media screen and (max-width: 767px) {
@@ -676,7 +685,14 @@ footer nav ul li a{
         margin-top: 16px;
         text-align: center;
     }
+
+
+    /* Nikita mobile */
     #about-top-section::before{
         height: 100px;
+    }
+    .about-top-section-p{
+     margin-top: 16px;
+        width: 327px;
     }
 }
