@@ -650,7 +650,7 @@ footer nav ul li a{
     justify-content: center;
     align-items: center;
 }
-.about-clients-header h1{
+.about-clients-header h2{
     width: 100%;
     display: inline-block;
     font-size: 40px;
@@ -681,13 +681,12 @@ footer nav ul li a{
     top: 0px;
 }
 
-@media screen and (max-width: 767px) and (min-width: 300px) {
+@media screen and (max-width: 767px) and (min-width: 100px) {
     .logo-container{
         align-items: center; 
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        gap: 40px;
         margin: auto auto 88px auto;
         width: 327px;
         height: 405px;
@@ -702,7 +701,7 @@ footer nav ul li a{
        width: 327px;
        text-align: justify;
     }
-    .about-clients-header h1{
+    .about-clients-header h2{
         content: "";
         display: inline-block;
         font-size: 35px;
@@ -712,7 +711,7 @@ footer nav ul li a{
         overflow: hidden;
     }
     .logo{
-        margin-top: 15px;
+        margin-top: 55px;
     }
     
    .logo1-5{
@@ -729,7 +728,7 @@ footer nav ul li a{
         width: 457px;
         text-align: center;
     }
-    .about-clients-header h1{
+    .about-clients-header h2{
         font-size: 35px;
     }
     .logo-container{
