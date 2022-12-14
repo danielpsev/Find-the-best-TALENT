@@ -32,8 +32,7 @@ a:active{
     text-decoration: none;
 }
 body{
-    /* Panaikint užbaigus projektą */
-    background-color: #263159;
+    min-width: 375px;
 }
 button[disabled]:hover{
     cursor: not-allowed;
@@ -636,10 +635,6 @@ footer nav ul li a{
         font-size: 32px;
         line-height: 32px;
     }
-    body{
-        /* Panaikint užbaigus projektą */
-        background-color: #495579;
-    }
     .stories-container{
         gap: 0px;
         flex-direction: column;
@@ -722,10 +717,6 @@ footer nav ul li a{
         height: 17px; 
         cursor: pointer;
     }
-    body{
-        /* Panaikint užbaigus projektą */
-        background-color: #251749;
-    }
     .stories-section-wrapper{
         margin: 140px 24px 164px 24px;
     }
@@ -781,5 +772,8 @@ footer nav ul li a{
     }
     .stuff-section-items-grid .item-box{
         min-height: 253px;
+    }
+    .about-stuff-section-inner{
+       margin-top: 100px;
     }
 }
