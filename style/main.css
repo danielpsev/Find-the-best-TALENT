@@ -1302,7 +1302,8 @@ div.contact-form textarea{
         flex-direction: column;
         align-items: center;
     }
-    #contact-aside{
+    #contact-aside .contact-main-aside-title,
+    #contact-aside .contact-ask-us{
         text-align: center;
     }
     #contact-aside, .contact-form{
@@ -1531,7 +1532,8 @@ div.contact-form textarea{
 
     .stuff-section-items-grid {
         grid-auto-rows: unset;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: 327px;
         grid-row-gap: 52px;
     }
 
@@ -1574,11 +1576,16 @@ div.contact-form textarea{
     #contact-main::after{
         height: 100px;
     }
+    .contact-items-container{
+        margin: 32px auto 0px auto;
+        width: 327px;
+    }
     .contact-form{
         margin-top: 56px;
     }
     .contact-form form{
         width: 325px;
+        margin: 0 auto;
     }
     .contact-item .item--description {
         text-align: left;
