@@ -854,6 +854,7 @@ footer nav ul li a {
 }
 .flipped-item{
 	transform: rotateY(-180deg);
+    background-color: var(--secondary-dark-green) !important;
 }
 
 /* Kodas skirtas tablet'ui */
