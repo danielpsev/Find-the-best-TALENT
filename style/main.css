@@ -1099,7 +1099,7 @@ div.contact-form textarea{
 .clients-container{
     display: flex;
     justify-content: center;
-    gap: 80px;
+    justify-content: space-between;
     margin-top: 64px;
 }
 .clients-container img.verge{
