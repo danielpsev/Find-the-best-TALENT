@@ -1089,17 +1089,15 @@ div.contact-form textarea{
     /* Daniel's, Karolio darbas pradžia */
     /* Build & manage dis... */
 
-    .index-advantages-section-inner {
-        flex-direction: column;
-    }
-
     .iasi--bg-img-1 {
         top: 0;
     }
 
     .index-advantages-section-inner {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        padding-top: 136px;
     }
 
 
@@ -1403,7 +1401,7 @@ div.contact-form textarea{
 
     /* Container */
     .index-advantages-section-inner {
-        padding-top: 114px;
+        padding-top: 100px;
     }
 
     /* Heading */
