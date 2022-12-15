@@ -845,7 +845,9 @@ footer nav ul li a {
     font-family: Livvic-Regular;
     font-weight: 500;
 }
-
+.item--more-information-btn svg{
+    transition: 0.2s;
+}
 .stuff-section-items-grid .item--more-information-btn {
     position: absolute;
     bottom: 0px;
@@ -1059,12 +1061,16 @@ div.contact-form textarea{
 .input-err::placeholder{
     color: rgba(246, 126, 126, 0.6) !important;
 }
+
 .contact-form-err-msg{
     margin-top: 8px;
     font-size: 10px;
     line-height: 12.55px;
     font-style: italic;
     color: var(--primary-light-coral) !important;
+}
+.just-validate-error-label{
+    display: inline;
 }
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
