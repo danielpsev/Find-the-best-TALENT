@@ -1199,3 +1199,120 @@ footer nav ul li a {
         width: 327px;
     }
 }
+
+#about-clients-section{
+    height: 437px;
+    position: relative;
+    padding: 1px;
+    overflow: hidden;
+    
+}
+.about-clients-header{
+    
+    height: 48px;
+    margin: 140px 100px auto 100px;
+    text-align: center;
+    color: var(--primary-white);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-clients-header h2{
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+}
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.logo{
+    height: 30px;
+    width: 160px;
+}
+.logo1-5{
+    width: 130px;
+    height: 40px;
+}
+#about-clients-donut{
+    background-image: url(../assets/images/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 100px) {
+    .logo-container{
+        align-items: center; 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: auto auto 88px auto;
+        width: 327px;
+        height: 405px;
+    }
+    #about-clients-donut{
+        left: -100px;
+        top: -100px;
+        
+    }
+    .about-clients-header{
+       margin: 88px auto auto auto;
+       width: 327px;
+       text-align: justify;
+    }
+    .about-clients-header h2{
+        content: "";
+        display: inline-block;
+        font-size: 35px;
+    }
+    #about-clients-section {
+        height: 632px;
+        overflow: hidden;
+    }
+    .logo{
+        margin-top: 55px;
+    }
+    
+   .logo1-5{
+        width: 110px;
+        height: 40px;
+    }
+ }
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    #about-clients-donut{
+        top: -100px;
+    }
+    .about-clients-header{
+        margin: 100px auto auto auto;
+        width: 457px;
+        text-align: center;
+    }
+    .about-clients-header h2{
+        font-size: 35px;
+    }
+    .logo-container{
+        margin: 30px auto 84px auto;    
+    }
+    #about-clients-section {
+        height: 308px;
+    }
+    .logo{
+        height: 17px;
+        width: 103px;
+    }
+    .logo1-5{
+        width: 90px;
+        height: 25px;
+    }
+        
+}
