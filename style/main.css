@@ -235,7 +235,8 @@ header,
 
 .header-flex-container {
     padding-top: 73px;
-    padding-bottom: 73px;
+    /* padding-bottom: 73px; */
+    padding-bottom: 123px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -942,32 +943,35 @@ footer nav ul li a {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
-    height: 200px;
     width: 100px;
     z-index: -1;
 } 
 #contact-main::before {
     top: 0;
     left: 0;
+    height: 200px;
     background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
     background-position: -100px 0px;
 }
 #contact-main::after {
     bottom: 0;
     right: 0;
+    height: 225px;
     background-image: url(../assets/images/bg-pattern-contact-2.svg);
 }
 .contact-main-inner{
     margin-top: 0px;
-    margin-bottom: 128px;
+    /* margin-bottom: 128px; */
+    /* margin-bottom: 92px; */
+    margin-bottom: 112px;
     display: flex;
     justify-content: space-between;
 }
 .contact-main-aside-title{
-    margin-top: 36px;
+    margin-top: 15px;
 }
 .contact-ask-us{
-    margin-top: 16px;
+    margin-top: 40px;
     color: var(--primary-light-coral);
     font-size: 32px;
     line-height: 48px;
@@ -984,6 +988,11 @@ footer nav ul li a {
     color: var(--primary-white);
     margin-left: 23px;
 }
+.contact-item .item--img{
+    width: 72px;
+    height: 72px;
+    text-align: center;
+}
 
 /*forma*/
 /*Form*/
@@ -991,8 +1000,8 @@ div.contact-form input, textarea {
     outline: none;
     border-width: 0 0 2px;
     background-color: transparent;
-    padding: 20px;
-    /* width: 80%; */
+    /* padding: 20px; */
+    padding: 17px;
     border-color: #BFCBCC;
     /* caret-color: transparent; */
 }
@@ -1033,17 +1042,6 @@ div.contact-form textarea{
     color: rgba(255, 255, 255, 0.6);
     font-family: Livvic-SemiBold;
 }
-/* #contact-main {
-    display: inline-flex;
-}
-*/
-/* #contact-aside {
-    width: 50%;
-}
-
-div.contact-form {
-    width: 50%;
-}  */
 .contact-form form{
     display: flex;
     flex-direction: column;
@@ -1570,8 +1568,20 @@ div.contact-form {
     /* #contact-aside, .contact-form{
         width: 100%;
     } */
+    #contact-main::before{
+        display: none;
+    }
+    #contact-main::after{
+        height: 100px;
+    }
     .contact-form{
         margin-top: 56px;
+    }
+    .contact-form form{
+        width: 325px;
+    }
+    .contact-item .item--description {
+        text-align: left;
     }
 }
 
