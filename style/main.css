@@ -1098,6 +1098,7 @@ div.contact-form textarea{
         flex-direction: column;
         align-items: center;
         padding-top: 136px;
+        padding-bottom: 100px;
     }
 
 
@@ -1402,6 +1403,7 @@ div.contact-form textarea{
     /* Container */
     .index-advantages-section-inner {
         padding-top: 100px;
+        padding-bottom: 64px;
     }
 
     /* Heading */
