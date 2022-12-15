@@ -235,7 +235,8 @@ header,
 
 .header-flex-container {
     padding-top: 73px;
-    padding-bottom: 73px;
+    /* padding-bottom: 73px; */
+    padding-bottom: 123px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -932,13 +933,144 @@ footer nav ul li a {
 	transform: rotateY(-180deg);
     background-color: var(--secondary-dark-green) !important;
 }
+#contact-main{
+    position: relative;
+    padding: 1px;
+    z-index: 1;
+}
+#contact-main::before,
+#contact-main::after{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100px;
+    z-index: -1;
+} 
+#contact-main::before {
+    top: 0;
+    left: 0;
+    height: 200px;
+    background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
+    background-position: -100px 0px;
+}
+#contact-main::after {
+    bottom: 0;
+    right: 0;
+    height: 225px;
+    background-image: url(../assets/images/bg-pattern-contact-2.svg);
+}
+.contact-main-inner{
+    margin-top: 0px;
+    /* margin-bottom: 128px; */
+    /* margin-bottom: 92px; */
+    margin-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-main-aside-title{
+    margin-top: 15px;
+}
+.contact-ask-us{
+    margin-top: 40px;
+    color: var(--primary-light-coral);
+    font-size: 32px;
+    line-height: 48px;
+}
+.contact-items-container{
+    margin-top: 32px;
+}
+.contact-item{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.contact-item .item--description{
+    color: var(--primary-white);
+    margin-left: 23px;
+}
+.contact-item .item--img{
+    width: 72px;
+    height: 72px;
+    text-align: center;
+}
 
+/*forma*/
+/*Form*/
+div.contact-form input, textarea { 
+    outline: none;
+    border-width: 0 0 2px;
+    background-color: transparent;
+    /* padding: 20px; */
+    padding: 17px;
+    border-color: #BFCBCC;
+    /* caret-color: transparent; */
+}
+
+div.contact-form  input:focus, div.contact-form  input:active, div.contact-form textarea:active, div.contact-form textarea:focus{
+    border-color: #79C8C7;
+}
+
+div.contact-form input[name="submit"] {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: none;
+    color: #004047;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+}
+
+input, select, textarea{
+    color: #FFFFFF;
+}
+div.contact-form textarea{
+    resize: none;
+}
+/*div.contact-form input[name="Message"] {
+    padding-bottom: 50px;
+} */
+
+
+::placeholder { 
+    /* color: #BFCBCC; */
+    
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Livvic-SemiBold;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+.contact-form-btn{
+    margin-top: 24px;
+    width: 123px;
+    height: 48px;
+}
+.input-err{
+    color: var(--primary-light-coral) !important;
+    border-bottom: 2px solid var(--primary-light-coral) !important;
+}
+.input-err::placeholder{
+    color: rgba(246, 126, 126, 0.6) !important;
+}
+.contact-form-err-msg{
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 12.55px;
+    font-style: italic;
+    color: var(--primary-light-coral) !important;
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper {
         width: calc(100% - 75px);
     }
-
     /* Header, Tablet */
     .header-img--talent {
         width: 126px;
@@ -1149,7 +1281,37 @@ footer nav ul li a {
 
     /* Darbo pabaiga */
     /* zz */
+    /*forma*/
+    /* #contact-main {
+        display: block;
+    }
 
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
+        padding: 100px;
+    }
+
+    div.contact-form  input[type=text] {
+        width: 100%;
+    }  */
+    .contact-main-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-aside .contact-main-aside-title,
+    #contact-aside .contact-ask-us{
+        text-align: center;
+    }
+    #contact-aside, .contact-form{
+        width: 540px;
+    }
+    .contact-form{
+        margin-top: 64px;
+    }
 }
 
 /*Kodas skirtas mobile*/
@@ -1157,7 +1319,10 @@ footer nav ul li a {
     .wrapper {
         width: calc(100% - 48px);
     }
-
+    .headings-h1__small {
+        font-size: 40px;
+        line-height: 40px;
+    }
     /* Header, Mobile */
     .header-img--talent {
         width: 126px;
@@ -1367,7 +1532,8 @@ footer nav ul li a {
 
     .stuff-section-items-grid {
         grid-auto-rows: unset;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: 327px;
         grid-row-gap: 52px;
     }
 
@@ -1387,6 +1553,42 @@ footer nav ul li a {
     .about-top-section-p {
         margin-top: 16px;
         width: 327px;
+    }
+    /*forma*/
+    #contact-main {
+        display: block;
+    }
+
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
+    }
+
+    /* #contact-aside, .contact-form{
+        width: 100%;
+    } */
+    #contact-main::before{
+        display: none;
+    }
+    #contact-main::after{
+        height: 100px;
+    }
+    .contact-items-container{
+        margin: 32px auto 0px auto;
+        width: 327px;
+    }
+    .contact-form{
+        margin-top: 56px;
+    }
+    .contact-form form{
+        width: 325px;
+        margin: 0 auto;
+    }
+    .contact-item .item--description {
+        text-align: left;
     }
 }
 
