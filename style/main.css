@@ -1255,7 +1255,11 @@ footer nav ul li a {
     }
 
     .advantages-box {
-        width: 390px;
+        width: 375px;
+    }
+
+    .advantages-item{
+    margin-left: -8px;
     }
 
     .aitdb-2,
