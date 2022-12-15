@@ -1066,14 +1066,13 @@ div.contact-form {
     font-size: 10px;
     line-height: 12.55px;
     font-style: italic;
-    color: var(--primary-light-coral);
+    color: var(--primary-light-coral) !important;
 }
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper {
         width: calc(100% - 75px);
     }
-
     /* Header, Tablet */
     .header-img--talent {
         width: 126px;
@@ -1321,7 +1320,10 @@ div.contact-form {
     .wrapper {
         width: calc(100% - 48px);
     }
-
+    .headings-h1__small {
+        font-size: 40px;
+        line-height: 40px;
+    }
     /* Header, Mobile */
     .header-img--talent {
         width: 126px;

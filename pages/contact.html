@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <title>Find the best TALENT</title>
 </head>
 <body>
@@ -65,22 +66,22 @@
                     <!--Forma-->
                     <div class="contact-form">
                         <form action="#" id="contact-form"> 
-                            <input id="contact-name" type="text" name="fname" size="30" placeholder="Name" required="">
+                            <input id="contact-name" type="text" name="fname" size="30" placeholder="Name" required>
                             <span id="contact-name-err" class="contact-form-err-msg"></span>
                                             
-                            <input id="contact-email" type="email" name="Email Address" size="30" placeholder="Email Address" required="">
+                            <input id="contact-email" type="email" name="Email Address" size="30" placeholder="Email Address" required>
                             <span id="contact-email-err" class="contact-form-err-msg"></span>
                             
-                            <input id="contact-company" type="text" name="Company Name" size="30" placeholder="Company Name" required="">
+                            <input id="contact-company" type="text" name="Company Name" size="30" placeholder="Company Name">
                             <span id="contact-company-err" class="contact-form-err-msg"></span>
                             
-                            <input id="contact-title" type="text" name="Title" size="30" placeholder="Title" required="">
+                            <input id="contact-title" type="text" name="Title" size="30" placeholder="Title">
                             <span id="contact-title-err" class="contact-form-err-msg"></span>
 
-                            <textarea id="contact-message" name="message" placeholder="Message" rows="4" cols="50"></textarea>
+                            <textarea id="contact-message" name="message" placeholder="Message" rows="4" cols="50" required></textarea>
                             <span id="contact-message-err" class="contact-form-err-msg"></span>
 
-                            <button type="submit" class="btn-type-1 btn-primary__light contact-form-btn" name="submit">submit</button>
+                            <button type="submit" class="btn-type-1 btn-secondary__light contact-form-btn" name="submit">submit</button>
                         
                         </form>
                     </div>
@@ -123,5 +124,6 @@
         </footer>
     </div>
     <script src="../script/main.js"></script>
+    <script src="../script/contact_form_validation.js"></script>
 </body>
 </html>
