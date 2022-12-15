@@ -719,3 +719,42 @@ div.contact-form {
     } 
 }
 
+#contact-main{
+    position: relative;
+    height: 550px;
+    z-index: 1;
+    padding: 1px;
+}
+
+#contact-main::before{
+    content: '';
+    background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    position: absolute;
+    left: -100px;
+}
+#contact-main::after{
+    content: '';
+    background-image: url(../assets/images/bg-pattern-contact-2.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 210px;
+    z-index: -1;
+    position: absolute;
+    top: 340px ;
+    left: 1330px;
+}
+.contact-main-header1{
+    margin-left: 165px;
+}
+.contact-main-header2{
+    margin-top: 16px;
+    margin-left: 165px;
+}
+.contact-main-imgs{
+ margin-left: 165px;
+ margin-top: 32px;
+}
