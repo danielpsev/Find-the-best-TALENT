@@ -724,6 +724,7 @@ div.contact-form {
     height: 550px;
     z-index: 1;
     padding: 1px;
+    overflow: hidden;
 }
 
 #contact-main::before{
@@ -749,22 +750,42 @@ div.contact-form {
 }
 .contact-main-header1{
     margin-left: 165px;
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
 }
 .contact-main-header2{
     margin-top: 16px;
     margin-left: 165px;
+    height: 48px;
+    width: 540px;
+    border: 1px solid black;
+    
 }
 .contact-imgs{
     height: 72px;
     width: 72px;
+    margin-left: 0px;
 }
 .contact-main-imgs{
  width: 540px;
- height: 220px;
+ height: 312px;
  display: flex;
+ flex-wrap: nowrap;
  flex-direction: column;   
  margin-left: 165px;
  margin-top: 32px;
  border: 1px solid black;
+ margin-bottom: 120px;
+ align-items: center;
+ justify-content: flex-start;
  
 }
+
+.text{
+ width: 435px;
+ border: 1px solid black;
+ margin-left: 93px;
+ height: 28px;
+}
+
