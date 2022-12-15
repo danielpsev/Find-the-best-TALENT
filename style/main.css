@@ -932,7 +932,52 @@ footer nav ul li a {
 	transform: rotateY(-180deg);
     background-color: var(--secondary-dark-green) !important;
 }
-
+#contact-main{
+    position: relative;
+    padding: 1px;
+    z-index: 1;
+}
+#contact-main::before,
+#contact-main::after{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100px;
+    z-index: -1;
+} 
+#contact-main::before {
+    top: 0;
+    left: 0;
+    background-image: url(../assets/images/bg-pattern-about-2-contact-1.svg);
+    background-position: -100px 0px;
+}
+#contact-main::after {
+    bottom: 0;
+    right: 0;
+    background-image: url(../assets/images/bg-pattern-contact-2.svg);
+}
+.contact-main-inner{
+    margin-top: 0px;
+    margin-bottom: 128px;
+}
+.contact-ask-us{
+    margin-top: 16px;
+    color: var(--primary-light-coral);
+    font-size: 32px;
+    line-height: 48px;
+}
+.contact-items-container{
+    margin-top: 32px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.contact-item .item--description{
+    color: var(--primary-white);
+    margin-left: 23px;
+}
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
     .wrapper {
