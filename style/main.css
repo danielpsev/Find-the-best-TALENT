@@ -960,6 +960,11 @@ footer nav ul li a {
 .contact-main-inner{
     margin-top: 0px;
     margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-main-aside-title{
+    margin-top: 36px;
 }
 .contact-ask-us{
     margin-top: 16px;
@@ -971,12 +976,81 @@ footer nav ul li a {
     margin-top: 32px;
 }
 .contact-item{
+    margin-top: 8px;
     display: flex;
     align-items: center;
 }
 .contact-item .item--description{
     color: var(--primary-white);
     margin-left: 23px;
+}
+
+/*forma*/
+/*Form*/
+div.contact-form input, textarea { 
+    outline: none;
+    border-width: 0 0 2px;
+    background-color: transparent;
+    padding: 20px;
+    /* width: 80%; */
+    border-color: #BFCBCC;
+    /* caret-color: transparent; */
+}
+
+div.contact-form  input:focus, div.contact-form  input:active, div.contact-form textarea:active, div.contact-form textarea:focus{
+    border-color: #79C8C7;
+}
+
+div.contact-form input[name="submit"] {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: none;
+    color: #004047;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF
+}
+
+input, select, textarea{
+    color: #FFFFFF;
+}
+div.contact-form textarea{
+    resize: none;
+}
+/*div.contact-form input[name="Message"] {
+    padding-bottom: 50px;
+} */
+
+
+::placeholder { 
+    color: #BFCBCC;
+    font-family: Livvic-SemiBold;
+}
+/* #contact-main {
+    display: inline-flex;
+}
+*/
+/* #contact-aside {
+    width: 50%;
+}
+
+div.contact-form {
+    width: 50%;
+}  */
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+.contact-form-btn{
+    margin-top: 24px;
+    width: 123px;
+    height: 48px;
 }
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
@@ -1194,6 +1268,23 @@ footer nav ul li a {
 
     /* Darbo pabaiga */
     /* zz */
+    /*forma*/
+    /* #contact-main {
+        display: block;
+    }
+
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
+        padding: 100px;
+    }
+
+    div.contact-form  input[type=text] {
+        width: 100%;
+    }  */
 
 }
 
@@ -1432,6 +1523,18 @@ footer nav ul li a {
     .about-top-section-p {
         margin-top: 16px;
         width: 327px;
+    }
+    /*forma*/
+    #contact-main {
+        display: block;
+    }
+
+    #contact-aside {
+        width: 100%;
+    }
+    
+    div.contact-form {
+        width: 100%;
     }
 }
 
