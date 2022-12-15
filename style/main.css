@@ -1013,7 +1013,7 @@ div.contact-form input[name="submit"] {
     margin: 20px 2px;
     cursor: pointer;
     border-radius: 24px;
-    border: 2px solid #FFFFFF
+    border: 2px solid #FFFFFF;
 }
 
 input, select, textarea{
@@ -1028,7 +1028,9 @@ div.contact-form textarea{
 
 
 ::placeholder { 
-    color: #BFCBCC;
+    /* color: #BFCBCC; */
+    
+    color: rgba(255, 255, 255, 0.6);
     font-family: Livvic-SemiBold;
 }
 /* #contact-main {
@@ -1051,6 +1053,20 @@ div.contact-form {
     margin-top: 24px;
     width: 123px;
     height: 48px;
+}
+.input-err{
+    color: var(--primary-light-coral) !important;
+    border-bottom: 2px solid var(--primary-light-coral) !important;
+}
+.input-err::placeholder{
+    color: rgba(246, 126, 126, 0.6) !important;
+}
+.contact-form-err-msg{
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 12.55px;
+    font-style: italic;
+    color: var(--primary-light-coral);
 }
 /* Kodas skirtas tablet'ui */
 @media screen and (max-width: 1439px) {
@@ -1285,7 +1301,19 @@ div.contact-form {
     div.contact-form  input[type=text] {
         width: 100%;
     }  */
-
+    .contact-main-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-aside{
+        text-align: center;
+    }
+    #contact-aside, .contact-form{
+        width: 540px;
+    }
+    .contact-form{
+        margin-top: 64px;
+    }
 }
 
 /*Kodas skirtas mobile*/
@@ -1535,6 +1563,13 @@ div.contact-form {
     
     div.contact-form {
         width: 100%;
+    }
+
+    /* #contact-aside, .contact-form{
+        width: 100%;
+    } */
+    .contact-form{
+        margin-top: 56px;
     }
 }
 
