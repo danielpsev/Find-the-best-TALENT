@@ -740,12 +740,12 @@ div.contact-form {
     content: '';
     background-image: url(../assets/images/bg-pattern-contact-2.svg);
     background-repeat: no-repeat;
-    width: 200px;
-    height: 210px;
+    width: 112.5px;
+    height: 200px;
     z-index: -1;
     position: absolute;
-    top: 340px ;
-    left: 1330px;
+    right: 0;
+    bottom: 0;
 }
 .contact-main-header1{
     margin-left: 165px;
@@ -754,7 +754,17 @@ div.contact-form {
     margin-top: 16px;
     margin-left: 165px;
 }
+.contact-imgs{
+    height: 72px;
+    width: 72px;
+}
 .contact-main-imgs{
+ width: 540px;
+ height: 220px;
+ display: flex;
+ flex-direction: column;   
  margin-left: 165px;
  margin-top: 32px;
+ border: 1px solid black;
+ 
 }
