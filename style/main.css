@@ -753,7 +753,6 @@ div.contact-form {
     margin-left: 165px;
     height: 100px;
     width: 350px;
-    border: 1px solid black;
     color: #FFFFFF;
     ;
 }
@@ -768,7 +767,6 @@ div.contact-form {
     margin-left: 165px;
     height: 48px;
     width: 540px;
-    border: 1px solid black;
 }
 
 .contact-main-header2 h2{
@@ -793,16 +791,11 @@ flex-direction: column;
   
  margin-left: 165px;
  margin-top: 32px;
- border: 1px solid black;
  margin-bottom: 120px;
- 
- 
- 
 }
 
 .text{
  width: 445px;
- border: 1px solid black;
  margin-left: 23px;
  height: 28px;
 }
@@ -811,4 +804,87 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: var(--primary-white);
+}
+@media screen and (max-width: 1439px) and (min-width: 768px ){
+    #contact-main{
+        height: 988px;
+    }
+    .contact-main-header1{
+        margin: 0px auto;
+        height: 56px;
+        width: 248px;
+    }
+    .contact-main-header1 h2{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+        text-align: center;
+    }
+    .contact-main-header2{
+        margin: 24px auto 20px auto;
+        height: 48px;
+        width: 200px;
+    }
+    .contact-main-header2 h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .contact-main-imgs{
+        width: 515px;
+        margin: 0 auto;
+    }
+    .contact-img-text, .contact-img-text2, .contact-img-text3{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 100px ){
+    #contact-main{
+        height: 972px;
+    }
+    #contact-main::before{
+        display: none;
+    }
+    .contact-main-header1{
+        margin: 30px auto auto auto;
+        height: 40px;
+        width: 224px;
+    }
+    .contact-main-header1 h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .contact-main-header2{
+        margin: 16px auto 20px auto;
+        height: 48px;
+        width: 200px;
+    }
+    .contact-main-header2 h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .contact-main-imgs{
+        width: 327px;
+        height: 264px;
+        margin: 40px auto auto;
+    }
+    .text{
+        width: 232px;
+        margin-left: 23px;
+        height: 56px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+       }
+       #contact-main::after{
+        bottom: -112.5px;
+       }
+      
 }
