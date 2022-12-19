@@ -1731,7 +1731,6 @@ div.contact-form textarea{
 
     .stuff-section-items-grid {
         grid-auto-rows: unset;
-        /* grid-template-columns: 1fr; */
         -ms-grid-columns: 327px;
             grid-template-columns: 327px;
         grid-row-gap: 52px;
