@@ -583,6 +583,7 @@ footer {
     height: 100%;
     background-color: var(--secondary-police-blue);
     padding: 56.37px 25.87px 0px 48px;
+    z-index: 1;
 }
 
 .mobile-nav-inner:after {
@@ -594,6 +595,7 @@ footer {
     height: 200px;
     background-image: url(../assets/images/bg-pattern-about-1-mobile-nav-1.svg);
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 p.mobile-nav-close {
@@ -629,7 +631,39 @@ p.mobile-nav-close {
 .mobile-nav-contact-btn {
     margin-top: 36px;
 }
-
+@keyframes mob-nav-op{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes mob-nav{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes mob-nav-close{
+    from{
+        right: 0;
+    }
+    to{
+        right: -100%;
+    }
+}
+.mob-nav-container-animation{
+    animation: 0.15s mob-nav-op linear 1;
+}
+.mob-nav-inner-animation{
+    animation: 0.2s mob-nav linear 1;
+}
+.mob-nav-close-animation{
+    animation: 0.2s mob-nav-close linear 1;
+}
 footer nav {
     margin-top: 24.89px;
 }
