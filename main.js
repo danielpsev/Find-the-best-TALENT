@@ -1,7 +1,14 @@
 let openMobileNavBtn = document.getElementById("openMobileNavBtn");
-let closeMobileNavBtn = document.getElementById("closeMobileNavBtn");
+//let closeMobileNavBtn = document.getElementById("closeMobileNavBtn");
 let mobileNav = document.getElementById("mobileNav");
 let mobNavRightContainer = document.getElementById("mobNavRightContainer");
+// openMobileNavBtn.addEventListener("click", function(){
+// 	mobileNav.style.display = "block";
+// });
+// closeMobileNavBtn.addEventListener("click", function(){
+//  	// mobileNav.style.display = "none";
+// 	 closeMobNav();
+// });
 const closeMobNav = (e) => {
 	mobileNav.classList.remove("mob-nav-container-animation");
 	mobNavRightContainer.classList.remove("mob-nav-inner-animation");
@@ -34,13 +41,14 @@ window.onclick = function(e) {
 //window.onload = function() {
 let flippable = document.getElementsByClassName("flippable");
 if(flippable.length){
-	var buttons = document.getElementsByClassName('item--more-information-btn');
-	for(var i = 0; i < buttons.length; i++) {
-		buttons[i].onclick = function(f) {
-			let index = Array.from(buttons).indexOf(this);
+	var anchors = document.getElementsByClassName('item--more-information-btn');
+	for(var i = 0; i < anchors.length; i++) {
+	   // var anchor = anchors[i];
+		anchors[i].onclick = function(f) {
+			let index = Array.from(anchors).indexOf(this);
 			flippable[index].classList.toggle("flipped-item");
-			buttons[index].classList.toggle("item--more-information-second-btn");
-			buttons[index].classList.toggle("item--more-information-main-btn");
+			anchors[index].classList.toggle("item--more-information-second-btn");
+			anchors[index].classList.toggle("item--more-information-main-btn");
 			
 		}
 	}
