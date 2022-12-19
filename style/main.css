@@ -226,8 +226,6 @@ header,
     background-color: var(--primary-midnight-green);
 }
 
-/* karolis dirba čia */
-/* ! Desktop */
 .header-img--talent {
     width: 157.5px;
     height: 40px;
@@ -235,7 +233,6 @@ header,
 
 .header-flex-container {
     padding-top: 73px;
-    /* padding-bottom: 73px; */
     padding-bottom: 123px;
     display: flex;
     align-items: center;
@@ -243,7 +240,6 @@ header,
 }
 
 header nav div {
-    /* Centers links in header */
     display: flex;
     align-items: center;
 }
@@ -256,7 +252,6 @@ header nav div a:hover {
     color: var(--primary-light-coral);
 }
 
-/* Home and About's margin-lefts */
 .header-link--home {
     margin-left: 82.5px;
 }
@@ -273,17 +268,7 @@ header nav div a:hover {
     display: none;
 }
 
-/* Hamburger menu -   */
-/* .hamburger-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid black;
-    width: 67%;
-    height: 100%;
-} */
 
-/* Container */
 .talent-container {
     color: var(--primary-white);
 
@@ -292,7 +277,6 @@ header nav div a:hover {
 }
 
 
-/* header */
 .tc--h1 {
     width: 635px;
     height: 200px;
@@ -309,7 +293,6 @@ header nav div a:hover {
     color: transparent;
 }
 
-/* Paragraph container */
 
 .paragraph-container {
     position: relative;
@@ -329,7 +312,7 @@ header nav div a:hover {
     height: 112px;
 }
 
-/* Background images */
+
 
 .pc--bg-img {
     background-repeat: no-repeat;
@@ -356,10 +339,6 @@ header nav div a:hover {
     top: 410px;
 }
 
-/* karolis baigia dirbti čia */
-
-/* zz */
-/* Daniel's darbas, + Karolio zz's */
 #index-advantages-section,
 #about-clients-section {
     background-color: var(--secondary-sacramento-state-green);
@@ -370,23 +349,6 @@ header nav div a:hover {
     background-color: var(--secondary-deep-jungle-green);
 }
 
-/* #index-advantages-section {
-    position: relative;
-    padding: 1px;
-} */
-
-/* #index-advantages-section:before {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100px;
-    height: 244px;
-    background-image: url(../assets/images/bg-pattern-home-3.svg);
-    background-repeat: no-repeat;
-} */
-
-/* karolis section2 */
 section.zz {
     position: relative;
 }
@@ -405,8 +367,6 @@ section.zz {
     display: flex;
     justify-content: space-between;
 
-    /* margin-top: 198px;
-    margin-bottom: 140px; */
     padding-top: 198px;
     padding-bottom: 140px;
     color: var(--primary-white);
@@ -455,8 +415,6 @@ section.zz {
     margin-top: 16px;
 }
 
-/* zz */
-
 
 #index-stories-section {
     position: relative;
@@ -501,7 +459,6 @@ section.zz {
 .stories-container {
     display: flex;
     gap: 28px;
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -530,9 +487,6 @@ section.zz {
     z-index: -1;
 }
 
-/* .stories-description{
-
-} */
 .stories-user {
     margin-top: 24px;
     color: var(--secondary-rapture-blue);
@@ -669,10 +623,7 @@ p.mobile-nav-close {
 }
 
 .mobile-nav-contact-btn-container {
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-     */
+    width: 100%; 
 }
 
 .mobile-nav-contact-btn {
@@ -703,16 +654,10 @@ footer nav ul li a:hover {
     color: var(--primary-light-coral);
 }
 
-/* .footer-address-box{
-    margin-left: 124.97px;
-} */
 .footer-address-box p {
     color: var(--secondary-police-blue);
 }
 
-/* .footer-socmedia-copyright-box{
-
-} */
 .footer-soc-media-container,
 .footer-copyright {
     text-align: right;
@@ -869,7 +814,6 @@ footer nav ul li a {
 }
 
 .stuff-section-items-grid .item-main-content {
-    /*display: none;*/
     text-align: center;
 }
 
@@ -963,8 +907,6 @@ footer nav ul li a {
 }
 .contact-main-inner{
     margin-top: 0px;
-    /* margin-bottom: 128px; */
-    /* margin-bottom: 92px; */
     margin-bottom: 112px;
     display: flex;
     justify-content: space-between;
@@ -996,16 +938,13 @@ footer nav ul li a {
     text-align: center;
 }
 
-/*forma*/
-/*Form*/
+
 div.contact-form input, textarea { 
     outline: none;
     border-width: 0 0 2px;
     background-color: transparent;
-    /* padding: 20px; */
     padding: 17px;
     border-color: #BFCBCC;
-    /* caret-color: transparent; */
 }
 
 div.contact-form  input:focus, div.contact-form  input:active, div.contact-form textarea:active, div.contact-form textarea:focus{
@@ -1033,14 +972,9 @@ input, select, textarea{
 div.contact-form textarea{
     resize: none;
 }
-/*div.contact-form input[name="Message"] {
-    padding-bottom: 50px;
-} */
 
 
-::placeholder { 
-    /* color: #BFCBCC; */
-    
+::placeholder {   
     color: rgba(255, 255, 255, 0.6);
     font-family: Livvic-SemiBold;
 }
@@ -1122,12 +1056,12 @@ div.contact-form textarea{
     width: 98px;
     height: 45px;
 }
-/* Kodas skirtas tablet'ui */
+
 @media screen and (max-width: 1439px) {
     .wrapper {
         width: calc(100% - 75px);
     }
-    /* Header, Tablet */
+   
     .header-img--talent {
         width: 126px;
         height: 32px;
@@ -1142,9 +1076,7 @@ div.contact-form textarea{
     }
 
 
-    /* Daniel's, Karolio darbas pradžia */
-    /* Build & manage dis... */
-
+    
     .iasi--bg-img-1 {
         top: 0;
     }
@@ -1158,7 +1090,7 @@ div.contact-form textarea{
     }
 
 
-    /* Heading */
+
     .advantages-title-box {
         margin-bottom: 64px;
         left: -3em;
@@ -1173,17 +1105,10 @@ div.contact-form textarea{
         line-height: 32px;
     }
 
-    /* Paragraph -> Description box */
+  
     .advantages-item-description {
         width: 478px;
     }
-
-
-    /* #index-advantages-section:before {
-        top: 0;
-    } */
-    /* Daniel's, Karolio darbo pabaiga */
-
 
 
     .stories-container {
@@ -1256,9 +1181,7 @@ div.contact-form textarea{
         align-items: center;
     }
 
-    /* ctrl s - išsaugo darbą/save'ina */
-    /* ctrl shift p - live serveris */
-
+    
     .about-top-section-p {
         text-align: center;
         margin: 34px;
@@ -1277,14 +1200,12 @@ div.contact-form textarea{
         font-style: normal;
     }
 
-    /* zz */
-    /* Find the best Talent */
-    /* bg-img-1 */
+    
     .tc--bg-img-1 {
         display: none;
     }
 
-    /* heading */
+  
     .tc--h1 {
         text-align: center;
         width: 683px;
@@ -1302,7 +1223,6 @@ div.contact-form textarea{
         line-height: 56px;
     }
 
-    /* paragraph rectangle */
     .pc--rectangle {
         display: none;
     }
@@ -1322,37 +1242,17 @@ div.contact-form textarea{
         flex-direction: column;
     }
 
-    /* paragraph container */
     .paragraph-container {
         height: 340px;
     }
 
-    /* bg-img-2 */
     .pc--bg-img-2 {
 
         right: 40px;
         top: 240px
     }
 
-    /* Darbo pabaiga */
-    /* zz */
-    /*forma*/
-    /* #contact-main {
-        display: block;
-    }
-
-    #contact-aside {
-        width: 100%;
-    }
     
-    div.contact-form {
-        width: 100%;
-        padding: 100px;
-    }
-
-    div.contact-form  input[type=text] {
-        width: 100%;
-    }  */
     .contact-main-inner{
         flex-direction: column;
         align-items: center;
@@ -1393,7 +1293,7 @@ div.contact-form textarea{
     }
 }
 
-/*Kodas skirtas mobile*/
+
 @media screen and (max-width: 767px) {
     .wrapper {
         width: calc(100% - 48px);
@@ -1402,7 +1302,7 @@ div.contact-form textarea{
         font-size: 40px;
         line-height: 40px;
     }
-    /* Header, Mobile */
+    
     .header-img--talent {
         width: 126px;
         height: 32px;
@@ -1417,7 +1317,7 @@ div.contact-form textarea{
         display: none;
     }
 
-    /* hamburger */
+   
     .header-img--hamburger-icon {
         display: block;
         width: 20px;
@@ -1432,14 +1332,13 @@ div.contact-form textarea{
     }
 
 
-    /* Find the best Talent */
-    /* talent container */
+    
     .talent-container {
         display: flex;
         justify-content: center;
     }
 
-    /* heading */
+   
     .tc--h1 {
         font-size: 40px;
         line-height: 40px;
@@ -1455,38 +1354,29 @@ div.contact-form textarea{
         line-height: 40px;
     }
 
-    /* paragraph */
+    
     .paragraph-container {
         margin: 0 24px 0;
     }
 
     .pc--p {
-        /* width: 327px; */
         width: 327px;
         height: 112px;
     }
 
-    /* bg-img-2 */
+  
     .pc--bg-img-2 {
         right: -15px;
     }
 
 
-    /* karolis baigia dirbti čia */
-
-    /* Daniel's, Karolio darbas pradžia */
-    /* Build & manage dis... */
-    /* zz2 */
-
-    /* Container */
-
-    /* Container */
+    
     .index-advantages-section-inner {
         padding-top: 100px;
         padding-bottom: 64px;
     }
 
-    /* Heading */
+  
     .advantages-title-box {
         width: 240px;
         height: 160px;
@@ -1509,18 +1399,17 @@ div.contact-form textarea{
 
     .aitdb-2,
     .aitdb-3 {
-        /* position: relative;
-        left: 22em; */
+       
         padding-left: 7px;
     }
 
-    /* Icons */
+
     .advantages-item-icon {
         position: absolute;
         left: 10em;
     }
 
-    /* Coral colored text */
+   
     .advantages-item-title-description-box {
         margin-top: 90px;
     }
@@ -1530,7 +1419,7 @@ div.contact-form textarea{
         justify-content: center;
     }
 
-    /* Paragraph */
+  
     .advantages-item-description {
         margin-top: 18px;
         width: 327px;
@@ -1540,15 +1429,6 @@ div.contact-form textarea{
         justify-content: center;
         margin-bottom: 45px;
     }
-
-
-    /* Daniel's, Karolio darbo pabaiga */
-
-    body {
-        /* Panaikint užbaigus projektą */
-        background-color: #251749;
-    }
-
     .stories-section-wrapper {
         margin: 140px 24px 164px 24px;
     }
@@ -1625,7 +1505,7 @@ div.contact-form textarea{
         margin-top: 100px;
     }
 
-    /* Nikita mobile */
+  
     #about-top-section::before {
         height: 100px;
     }
@@ -1634,7 +1514,7 @@ div.contact-form textarea{
         margin-top: 16px;
         width: 327px;
     }
-    /*forma*/
+ 
     #contact-main {
         display: block;
     }
@@ -1647,9 +1527,7 @@ div.contact-form textarea{
         width: 100%;
     }
 
-    /* #contact-aside, .contact-form{
-        width: 100%;
-    } */
+   
     #contact-main::before{
         display: none;
     }
