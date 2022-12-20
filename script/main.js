@@ -41,7 +41,6 @@ if(flippable.length){
 			flippable[index].classList.toggle("flipped-item");
 			buttons[index].classList.toggle("item--more-information-second-btn");
 			buttons[index].classList.toggle("item--more-information-main-btn");
-			
 		}
 	}
 }
